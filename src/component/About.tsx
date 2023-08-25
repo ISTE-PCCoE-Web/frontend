@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
     <Box
     background="#000"
       w="100%"
-      h="100vh"
+      h="80vh"
     >
       {/* <Box w="75%">
       
