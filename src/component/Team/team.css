@@ -105,8 +105,8 @@ h1{
         padding: 5em 1em;
     }
     .column{
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
         padding: 0 1em;
     }
 }

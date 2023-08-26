@@ -5,9 +5,9 @@ import { Box, Heading,Text,Image,Flex } from "@chakra-ui/react";
 const AboutPage: React.FC = () => {
   return (
     <Box
-    background="linear-gradient(225deg, rgba(105, 102, 101, 0.9) 0%, rgba(76, 74, 74, 0.9) 34.90%, rgba(22, 22, 23, 0.90) 100%)"
+    background="#000"
       w="100%"
-      h="100vh"
+      h="80vh"
     >
       {/* <Box w="75%">
       
