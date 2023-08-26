@@ -84,17 +84,18 @@ Thank you for considering contributing to our repository! Here's how you can get
     ```bash
     git checkout master
     git pull origin master
-    git checkout <your feature branch name>
+    git checkout <your branch name>
     git merge master
 
 
 5. **Push Your Changes:**
-    **Before Pushing your changes make sure you perform the above step**
+    **Before Pushing your changes make sure you perform the above step:**
     Push your branch to the repository:
+    ```bash
     git push origin feature/your-feature-name
 
 
-6. **Create a Pull Request:**
+7. **Create a Pull Request:**
       Navigate to the Pull Requests section of the repository on GitHub.
       Click on the "New Pull Request" button.
       Set the base repository and base branch to the appropriate values.
@@ -102,15 +103,15 @@ Thank you for considering contributing to our repository! Here's how you can get
       Click the "Create Pull Request" button.
       
       
-7. **Review and Merge:**
+8. **Review and Merge:**
     Other contributors will review your pull request. They may provide feedback or request changes.
     Once your pull request is approved by maintainers, your changes will be merged into the master branch.
 
 
-8. **Delete Your Branch (Optional but preferred as you might do the changes in other branches     and  commit from the other if there are many branches other than the master):**
+9. **Delete Your Branch (Optional but preferred as you might do the changes in other branches     and  commit from the other if there are many branches other than the master):**
     After your changes are merged, you can delete your feature branch:
     ```bash
-    git branch -d feature/your-feature-name
+    git branch -d github_username/your-feature-name
 
 Thank you for your contributions!
 
