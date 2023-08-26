@@ -12,6 +12,7 @@ export default function Team() {
         <section>
             <div className="row">
                 <h1>Our Team</h1>
+                <p>{message}</p>
             </div>
             <div className="row">
             {/* Column 1 */}
