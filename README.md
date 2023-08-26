@@ -92,7 +92,7 @@ Thank you for considering contributing to our repository! Here's how you can get
     **Before Pushing your changes make sure you perform the above step:**
     Push your branch to the repository:
     ```bash
-    git push origin feature/your-feature-name
+    git push origin github_username/your-feature-name
 
 
 7. **Create a Pull Request:**
