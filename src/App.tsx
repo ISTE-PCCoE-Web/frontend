@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-import About from './component/About';
+import About from './component/About/About';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
-
+import Chart from "./component/Chart/Chart"
+import Team from "./component/Team/Team"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +15,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <About />
+    <Box>
+      <Team/>
+    </Box>
   );
 }
 
