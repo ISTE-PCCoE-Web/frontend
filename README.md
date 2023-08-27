@@ -18,7 +18,7 @@ The Indian Society for Technical Education (ISTE) is the leading National Profes
 1. Install npm (If already installed skip this step. Feel stuck? refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 2. Clone the respository - 
  ```bash 
-   git clone https://github.com/ISTE-PCCoE-Web/ISTE-PCCoE-Website.git
+   git clone https://github.com/ISTE-PCCoE-Web/frontend.git
  ```
 3. Open repository file in you preferred IDE.
 4. Install dependencies by using - 
@@ -53,3 +53,74 @@ Not into reading? Check out the following videos
 
 1. GitHub Tutorial - https://www.youtube.com/watch?v=RGOj5yH7evk
 2. Learn React - https://www.youtube.com/watch?v=bMknfKXIFA8
+
+
+
+## Contributing to the Repository
+
+Thank you for considering contributing to our repository! Here's how you can get started:
+
+1. **Clone the Repository:**
+   Clone the repository to your local machine:
+   ```bash
+   git clone <repository_url>
+
+
+2. **Create your feature or issue branch:**
+    Create a new branch for your feature:
+    ```bash
+    git checkout -b github_username/your-feature-name
+
+
+3. **Make and Commit Changes:**
+    Make your changes and commit them:
+    ```bash
+    git add .
+    git commit -m "Add description of changes"
+
+
+4. **Sync with master:**
+    Keep your branch up-to-date with the master branch:
+    ```bash
+    git checkout master
+    git pull origin master
+    git checkout <your branch name>
+    git merge master
+
+
+5. **Push Your Changes:**
+    **Before Pushing your changes make sure you perform the above step:**
+    Push your branch to the repository:
+    ```bash
+    git push origin github_username/your-feature-name
+
+
+7. **Create a Pull Request:**
+      Navigate to the Pull Requests section of the repository on GitHub.
+      Click on the "New Pull Request" button.
+      Set the base repository and base branch to the appropriate values.
+      Provide a descriptive title and details about your changes.
+      Click the "Create Pull Request" button.
+      
+      
+8. **Review and Merge:**
+    Other contributors will review your pull request. They may provide feedback or request changes.
+    Once your pull request is approved by maintainers, your changes will be merged into the master branch.
+
+
+9. **Delete Your Branch (Optional but preferred as you might do the changes in other branches     and  commit from the other if there are many branches other than the master):**
+    After your changes are merged, you can delete your feature branch:
+    ```bash
+    git branch -d github_username/your-feature-name
+
+Thank you for your contributions!
+
+
+
+
+
+
+
+
+
+
