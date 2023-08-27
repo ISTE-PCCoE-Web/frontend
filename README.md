@@ -18,7 +18,7 @@ The Indian Society for Technical Education (ISTE) is the leading National Profes
 1. Install npm (If already installed skip this step. Feel stuck? refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 2. Clone the respository - 
  ```bash 
-   git clone https://github.com/ISTE-PCCoE-Web/ISTE-PCCoE-Website.git
+   git clone https://github.com/ISTE-PCCoE-Web/frontend.git
  ```
 3. Open repository file in you preferred IDE.
 4. Install dependencies by using - 
