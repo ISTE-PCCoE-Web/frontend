@@ -1,8 +1,8 @@
 //@ts-nocheck
 import React from 'react';
-import Card from './Card';
-import "./team.css"
-import membersData from "./members.json"
+import "../components/Team/team.css"
+import { Card } from '../components';
+import membersData from "../utils/members.json"
 
 // The Team component displays a list of team members using the Card component
 export default function Team() {
