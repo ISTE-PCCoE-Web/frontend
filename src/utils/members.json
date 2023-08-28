@@ -1,0 +1,135 @@
+    [
+      {
+        "id": 1,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "position": "President",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 2,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 3,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 4,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 5,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 6,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      },
+      {
+        "id": 7,
+        "firstName": "Ayush",
+        "lastName": "Dudhani",
+        "age": 21,
+        "gender": "male",
+        "phone": "+63 791 675 8914",
+        "username": "atuny0",
+        "password": "9uQFF1Lh",
+        "position": "President",
+        "socials": {
+            "email": "dudhaniayush@gmail.com",
+            "LinkedIn": "#",
+            "Github": "#"
+        },
+        "birthDate": "2000-12-25",
+        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
+        "branch": "Computer Engineering"
+      }
+    ]
