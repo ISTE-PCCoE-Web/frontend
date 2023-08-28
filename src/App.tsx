@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import Chart from "./component/Chart/Chart"
 import Team from "./component/Team/Team"
+import Events from "./component/Events/Events"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <Box>
-      <Team/>
+      <Events/>
     </Box>
   );
 }
