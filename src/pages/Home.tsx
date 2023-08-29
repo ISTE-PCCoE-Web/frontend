@@ -7,7 +7,7 @@ import logo from "../img/ISTELogo/ISTELogo.png";
 const Home = () => {
   const navItems = [
     { name: "Home", link: "/home" },
-    { name: "PastEvents", link: "/events" },
+    { name: "Events", link: "/events" },
     { name: "Teams", link: "/team" },
     { name: "Feedback", link: "/feedback" },
   ];

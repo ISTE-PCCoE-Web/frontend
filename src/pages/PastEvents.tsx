@@ -3,7 +3,7 @@ import "../components/Events/events.css"
 
 export default function PastEvents() {
     return (
-        <div className="container">
+        <div className="pastEventsContainer">
             <div className="timeline">
                 <ul>
                     <li>

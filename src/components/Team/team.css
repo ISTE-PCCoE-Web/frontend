@@ -1,11 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.teamContainer{
     font-family: sans-serif;
-}
-
-.container{
+    width: 100%;
     background-color: #000819;
 }
 
