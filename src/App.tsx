@@ -4,7 +4,7 @@ import About from './components/About/About';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
-import { Home, Events, Feedback, Team } from './pages';
+import { Home, PastEvents, Feedback, Team } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/events",
-    element: <Events />,
+    element: <PastEvents />,
   },
   {
     path: "/feedback",

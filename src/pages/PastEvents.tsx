@@ -1,7 +1,7 @@
 import React from 'react'
-import "./events.css"
+import "../components/Events/events.css"
 
-export default function Events() {
+export default function PastEvents() {
     return (
         <div className="container">
             <div className="timeline">

@@ -1,0 +1,25 @@
+{
+    "past_events": [
+        {
+            "name": "Coding Workshop",
+            "date": "2023-08-10",
+            "time": "02:00 PM - 04:00 PM",
+            "venue": "Computer Lab 3",
+            "description": "Hands-on workshop on coding and algorithmic problem-solving.",
+            "speakers": ["John Smith", "Alice Johnson"],
+            "photos": ["workshop1.jpg", "workshop2.jpg"]
+        },
+        {
+            "name": "Sports Meet",
+            "date": "2023-07-20",
+            "time": "09:00 AM - 06:00 PM",
+            "venue": "Sports Ground",
+            "description": "Inter-department sports competition featuring various games.",
+            "winners": {
+                "football": "Computer Science",
+                "basketball": "Electrical Engineering"
+            },
+            "photos": ["sports1.jpg", "sports2.jpg"]
+        }
+    ]
+}
