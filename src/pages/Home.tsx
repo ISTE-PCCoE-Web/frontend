@@ -1,7 +1,8 @@
-import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Img, Text } from "@chakra-ui/react";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { About, Navbar } from "../components";
+import { About, CardsCarousel, EventsCard, Navbar } from "../components";
+import { EventData } from "../data/EventData";
 import logo from "../img/ISTELogo.png";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
   });
 
   let y = useTransform(scrollYProgress, [0,1], ["0%", "50%"]);
-  let opacity = useTransform(scrollYProgress, [0,1], [0.1,0]);
+  let opacity = useTransform(scrollYProgress, [0,1], [0.08,0]);
   let scale = useTransform(scrollYProgress, [0,1],["100%", "50%"]);
 
 
@@ -55,6 +56,8 @@ const Home = () => {
         padding="1.5rem 2.5rem"
         position="relative"
         zIndex={5}
+        scrollSnapAlign= "start"
+        scrollSnapStop="always"
       >
         <Navbar navLinks={navItems} color={"#fff"} />
         <Flex flexDir="column" flexGrow={1} justifyContent="center" pl="4rem">
@@ -81,7 +84,28 @@ const Home = () => {
           </Button>
         </Flex>
       </Flex>
+
+      {/* About us */}
       <About />
+
+      {/* Events */}
+      <Box px="2rem" py="1rem" scrollSnapAlign= "start" scrollSnapStop="always">
+        <Heading as="h1" color="#fff" fontSize="100px">
+          EVENTS
+        </Heading>
+        <CardsCarousel 
+          cardsData = {EventData.map((card) => {
+            return (
+              <EventsCard 
+                img={card.img}
+                eventTitle={card.eventTitle}
+                eventDescription={card.eventDescription}
+                eventType={card.eventType}
+              />
+            );
+          })}
+        />
+      </Box>
     </Box>
   );
 };

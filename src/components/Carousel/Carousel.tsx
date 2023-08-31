@@ -16,6 +16,9 @@ function CardsCarousel({ cardsData }:any) {
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
+        style={{
+          padding: "1rem"
+        }}
       >
         {cardsData.map((card: any) => {
           return (

@@ -6,11 +6,14 @@ const AboutPage: React.FC = () => {
   return (
     <Box
       w="100%"
-      h="100vh"
+      h="80vh"
       color="#fff"
+      scrollSnapAlign= "start"
+      scrollSnapStop="always"
+      mb="3rem"
     >
-      <Flex flexDirection="column" paddingTop="70px" h="100%" w="75%" >
-        <Heading as="h2" padding="50px 0px 0px 2rem" >
+      <Flex flexDirection="column" paddingTop="2rem" h="100%" w="75%" >
+        <Heading as="h2" fontSize="100px" padding="50px 0px 0px 2rem" >
           ABOUT US
         </Heading>
         <Text fontSize='24px' padding="50px 0px 0px 2rem" >
