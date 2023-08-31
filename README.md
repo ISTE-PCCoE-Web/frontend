@@ -49,11 +49,14 @@ Feeling intimidated? Don't worry. Here are some articles that might help you out
 2. How to raise a PR - https://www.shecancode.io/blog/how-to-raise-a-pull-request-pr-on-github
 3. Learn React - [React documentation](https://reactjs.org/).
 4. Learn Chakra- https://chakra-ui.com/getting-started
+5. Learn Spline-https://docs.spline.design/
+                https://www.schoolofmotion.com/blog/3d-design-with-spline
 
 Not into reading? Check out the following videos
 
 1. GitHub Tutorial - https://www.youtube.com/watch?v=RGOj5yH7evk
 2. Learn React - https://www.youtube.com/watch?v=bMknfKXIFA8
+3. Learn Spline -https://docs.spline.design/05c7a5aabab041d2876cd3222d92ca32
 
 
 
