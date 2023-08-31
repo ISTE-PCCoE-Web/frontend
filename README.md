@@ -1,5 +1,5 @@
-# ISTE-PCCoE-Website
-A wesite for ISTE PCCoE Student's Chapter
+# ISTE-PCC0E-Website
+A website for ISTE PCCOE Student's Chapter
 
 ## Table of contents
 1. [Overview](#overview)
@@ -10,7 +10,7 @@ A wesite for ISTE PCCoE Student's Chapter
 
 <a name = "overview"></a>
 ## About ISTE
-The Indian Society for Technical Education (ISTE) is the leading National Professional non-profit making Society for the Technical Education System in our country with the motto of Career Development of Teachers and Personality Development of Students and overall development of our Technical Education System.  Being the only national organisation of educators in the field of Engineering and Technology, ISTE effectively contributes in various missions of the Union Government. The strength of ISTE is the strong base it has in technical education institutions in the country.   
+The Indian Society for Technical Education (ISTE) is the leading National Professional non-profit making Society for the Technical Education System in our country with the motto of Career Development of Teachers and Personality Development of Students and overall development of our Technical Education System. Being the only national organisation of educators in the field of Engineering and Technology, ISTE effectively contributes in various missions of the Union Government. The strength of ISTE is the strong base it has in technical education institutions in the country.   
 
 
 <a name = "projectsetup"></a>
