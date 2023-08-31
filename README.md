@@ -48,6 +48,7 @@ Feeling intimidated? Don't worry. Here are some articles that might help you out
 1. GitHub Essentials - https://www.freecodecamp.org/news/introduction-to-git-and-github/
 2. How to raise a PR - https://www.shecancode.io/blog/how-to-raise-a-pull-request-pr-on-github
 3. Learn React - [React documentation](https://reactjs.org/).
+4. Learn Chakra- https://chakra-ui.com/getting-started
 
 Not into reading? Check out the following videos
 

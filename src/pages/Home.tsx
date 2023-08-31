@@ -9,7 +9,7 @@ const Home = () => {
   const navItems = [
     { name: "Home", link: "/home" },
     { name: "Events", link: "/events" },
-    { name: "Teams", link: "/home" },
+    { name: "Teams", link: "/team" },
     { name: "Feedback", link: "/feedback" },
   ];
 
