@@ -6,4 +6,6 @@ export { default as Hero } from './EventDesc/Hero';
 export { default as Features } from './EventDesc/Features';
 export { default as Frequent } from './EventDesc/Frequent';
 export { default as Counter } from './EventDesc/Counter';
+export { default as UpcomingEvents } from './Events/UpcomingEvents'; 
+export { default as PastEvents } from './Events/PastEvents'; 
 export { default as Card} from './Team/Card';
