@@ -1,6 +1,6 @@
 import { Box, Flex, Img, Button } from '@chakra-ui/react';
 import React from 'react';
-import Logo from "../../img/ISTELogo.png";
+import Logo from "../../img/ISTELogo/ISTELogo.png";
 import {useNavigate} from "react-router-dom" 
 
 const Navbar = ({color, navLinks, ...props}:any) => {

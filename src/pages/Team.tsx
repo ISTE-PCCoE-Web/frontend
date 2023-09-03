@@ -7,7 +7,7 @@ import membersData from "../utils/members.json"
 // The Team component displays a list of team members using the Card component
 export default function Team() {
     return (
-        <div className="container">
+        <div className="teamContainer">
             {/* Team section */}
             <section>
                 {/* Heading */}

@@ -2,7 +2,7 @@ import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { About, Navbar } from "../components";
-import logo from "../img/ISTELogo.png";
+import logo from "../img/ISTELogo/ISTELogo.png";
 
 const Home = () => {
   const navItems = [
