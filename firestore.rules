@@ -1,0 +1,30 @@
+rules_version='2';
+
+service cloud.firestore{
+	match/databases/{databases}/document {
+	
+  	match/users/{userId}{
+		
+    allow create : if isEmailUnique();
+  	
+}
+
+function isEmailUnique() {
+      // Get the email from the request
+      let email = request.resource.data.email;
+
+      // Query the "users" collection to check if the email already exists
+      let query = 
+        exists(
+          /databases/$(database)/documents/users,
+          request.auth.uid,
+          ['email', '==', email]
+        );
+
+      // Return true if the email doesn't exist, otherwise, deny the create operation
+      return !query;
+    }
+  
+  }
+}
+
