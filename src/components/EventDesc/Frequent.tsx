@@ -7,6 +7,7 @@ import {
   AccordionPanel,
   Flex,
   useColorModeValue,
+  Heading,
   Text,
   Container,
 } from '@chakra-ui/react'
@@ -21,8 +22,18 @@ export default function Frequent() {
       align={'center'}
       justify={'center'}
       bg={useColorModeValue('black', 'gray.800')}>
-      <Container>
-        <Accordion allowMultiple width="100%" maxW="lg" bg="black" rounded="lg">
+      <Container alignContent={'center'}>
+        <Heading
+          fontWeight={600}
+          textAlign={'center'}
+          paddingBottom={'1em'}
+          fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
+          lineHeight={'110%'}>
+          <Text maxW={'5xl'} as={'span'} color={'white'}>
+            FAQs
+          </Text>
+        </Heading>
+        <Accordion allowMultiple width="100%" maxW="5xl" bg="black" rounded="lg">
           <AccordionItem>
             <AccordionButton
               display="flex"
@@ -33,7 +44,7 @@ export default function Frequent() {
               <Text fontSize="md" color="white">
                 What is Technical debate about?
               </Text>
-              <ChevronDownIcon fontSize="24px" color={'white'}/>
+              <ChevronDownIcon fontSize="24px" color={'white'} />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="white">
@@ -51,11 +62,11 @@ export default function Frequent() {
               <Text fontSize="md" color="white">
                 What are the prizes?
               </Text>
-              <ChevronDownIcon fontSize="24px" color={'white'}/>
+              <ChevronDownIcon fontSize="24px" color={'white'} />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="white">
-                Goodies 
+                Goodies
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -69,7 +80,7 @@ export default function Frequent() {
               <Text fontSize="md" color="white">
                 What is the judging criteria?
               </Text>
-              <ChevronDownIcon fontSize="24px" color={'white'}/>
+              <ChevronDownIcon fontSize="24px" color={'white'} />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="white">
