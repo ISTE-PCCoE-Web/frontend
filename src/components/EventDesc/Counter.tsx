@@ -49,8 +49,8 @@ export default function Counter() {
         <section className="timer">
             <div className="first">
                 <div className="timer-icon">
-                    <h2>Countdown Timer</h2>
-                    <p>Countdown to a really special date. One you could or would never imagine!</p>
+                    <h1 className="counter-title" >The countdown has begun</h1>
+                    {/* <p>Countdown to a really special date. One you could or would never imagine!</p> */}
                 </div>
             </div>
             <div className="second">
