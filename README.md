@@ -1,4 +1,4 @@
-# ISTE-PCC0E-Website
+# ISTE-PCCOE-Website
 A website for ISTE PCCOE Student's Chapter
 
 ## Table of contents
