@@ -7,10 +7,12 @@ import 'swiper/css/effect-cards';
 import './styles.css';
 
 import { EffectCards } from 'swiper';
+import { Flex, Text } from '@chakra-ui/react';
 
-function CardsCarousel({ cardsData }:any) {
+function CardsCarousel({ cardsData, title }:any) {
   return (
     <>
+      <Text fontSize="40px" color="#fff" fontWeight="semibold" textAlign="center">{title}</Text>
       <Swiper
         effect={'cards'}
         grabCursor={true}
