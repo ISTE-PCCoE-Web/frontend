@@ -13,6 +13,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  background,
 } from '@chakra-ui/react'
 
 export default function EventCard() {
@@ -25,31 +26,61 @@ export default function EventCard() {
   marginLeft={'auto'}
   marginRight={'auto'}
   marginBottom={'3em'}
-  bg={'black'}
+  borderColor={'rgba(255, 255, 255, 0.05)'}
+  bg={'rgba(20, 1, 50, 0.05)'}
   color={'white'}
+  backdropFilter={'auto'}
+  backdropBlur={'4px'}
+  bgGradient={'linear(to-br, rgba(155, 100, 155, 0.1), rgba(155, 100, 155, 0.05))'}
 >
   <Image
     objectFit='cover'
     maxW={{ base: '100%', sm: '300px' }}
     src={debate}
+    m = {'1em'}
+    borderRadius={'5px'}
     alt='Caffe Latte'
   />
 
-  <Stack>
+  <Stack >
     <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
+      <Heading 
+      size='md'
+      fontFamily={'sans-serif'}
+      fontWeight={'600'}
+      letterSpacing={'1px'}
+      >The perfect latte</Heading>
 
-      <Text py='2'>
+      <Text 
+      py='2'
+      fontFamily={'sans-serif'}
+      fontWeight={'100'}
+      letterSpacing={'1px'}
+      >
         Caffè latte is a coffee beverage of Italian origin made with espresso
         and steamed milk.
       </Text>
     </CardBody>
 
     <CardFooter>
-      <Button variant='solid' marginRight={'1em'} colorScheme='blue'>
+      <Button 
+      variant='outline'
+      marginRight={'1em'} 
+      colorScheme='purple'
+      _hover={{
+        background:'rgba(0,0,0,0.2)',
+      }}
+      >
         About Event
       </Button>
-      <Button variant='solid' colorScheme='blue'>
+      <Button 
+      variant='outline'
+      marginRight={'1em'} 
+      colorScheme='purple'
+      _hover={{
+        background:'rgba(0,0,0,0.2)',
+      }}
+      >
         Register
       </Button>
     </CardFooter>
