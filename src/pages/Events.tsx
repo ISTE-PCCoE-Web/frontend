@@ -1,9 +1,13 @@
 import React from 'react'
+import "../components/Events/events.css"
 
-const Events = () => {
+import { UpcomingEvents, PastEvents } from '../components'
+export default function Events() {
   return (
-    <div>Events</div>
+    <div>
+      <UpcomingEvents/>
+      <hr />
+      <PastEvents/>
+    </div>
   )
 }
-
-export default Events;
