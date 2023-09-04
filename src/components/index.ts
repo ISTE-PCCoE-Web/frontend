@@ -8,4 +8,6 @@ export { default as Frequent } from './EventDesc/Frequent';
 export { default as Counter } from './EventDesc/Counter';
 export { default as UpcomingEvents } from './Events/UpcomingEvents'; 
 export { default as PastEvents } from './Events/PastEvents'; 
+export { default as ContactBackground } from './3dBackground/ContactBackground'
 export { default as Card} from './Team/Card';
+export { default as CellCard } from './CellCard/CellCard';
