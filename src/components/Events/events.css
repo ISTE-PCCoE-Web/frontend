@@ -1,4 +1,9 @@
-hr{
-    width: 500px;
+.eventContainer{
+    background-color: black;
 
+}
+hr.horizon{
+    width: 80%;
+    margin: auto;
+    border-color: rgb(132, 30, 214);
 }

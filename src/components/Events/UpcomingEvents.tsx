@@ -31,7 +31,14 @@ export default function UpcomingEvents() {
                     fontWeight={600}
                     fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
                     lineHeight={'110%'}>
-                    <Text maxW={'5xl'} as={'span'} color={'white'}>
+                    <Text 
+                    maxW={'5xl'} 
+                    as={'span'} 
+                    color={'white'}
+                    fontFamily={'sans-serif'}
+                    fontWeight={'100'}
+                    letterSpacing={'1px'}
+                    >
                         Upcoming Events
                     </Text>
                 </Heading>

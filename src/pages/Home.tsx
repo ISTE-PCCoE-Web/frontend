@@ -20,7 +20,7 @@ import {
   Navbar,
 } from "../components";
 import { EventData } from "../data/EventData";
-import logo from "../img/ISTELogo.png";
+import logo from "../img/ISTELogo/ISTELogo.png";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { CellData } from "../data/CellData";
