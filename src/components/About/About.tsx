@@ -2,6 +2,20 @@ import React from "react";
 import "./about.css";
 import { Box, Heading, Text, Image, Flex, Button } from "@chakra-ui/react";
 import { BsArrowRightCircle } from "react-icons/bs";
+// Import Swiper React components
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+// import 'swiper/css/pagination';
+
+
+// import required modules
+// import  {Pagination}  from 'swiper/modules';
+import { Pagination } from 'swiper';
 
 const AboutPage: React.FC = () => {
   return (
@@ -37,6 +51,7 @@ const AboutPage: React.FC = () => {
           </Button>
         </Flex>
       </Flex>
+      
     </Box>
   );
 };
