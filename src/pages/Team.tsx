@@ -1,7 +1,7 @@
 //@ts-nocheck
 import React from 'react';
 import "../components/Team/team.css"
-import { Card, TeamCarousel } from '../components';
+import { Card, Footer } from '../components';
 import dummyData from "../utils/members.json"
 
 import {
@@ -13,10 +13,6 @@ import axios from 'axios';
 
 // The Team component displays a list of team members using the Card component
 // const [isLoading,setIsLoading]=useState(true);
-
-
-   
-    
 
 export default function Team() {
     const [membersData,setmembersData]=useState([]);
@@ -79,6 +75,7 @@ export default function Team() {
                 </div>
 
             </section>
+            <Footer/>
         </div>
     )
 }
