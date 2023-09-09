@@ -12,13 +12,6 @@ import {
 export default function Events(){
   return (
     <div className="eventContainer">
-      <section className='eventGradient1'/>
-      <Box position={'fixed'}
-      w={'100%'}
-      h={'100%'}
-      >
-      </Box>
-      
       <UpcomingEvents/>
       <div className="horizon"/>
       <PastEvents/>

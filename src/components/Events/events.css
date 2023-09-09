@@ -1,21 +1,17 @@
 .eventContainer{
-  background-color: #000418 ;
-}
-
-.eventGradient1{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 40%;
-  width: 35%;
-  /* background: linear-gradient(90deg, rgb(161, 242, 246, 0.2) 0%, rgba(43,241,251,0.2) 30%); */
-  /* filter: blur(300px); */
+  background-color:hsla(237,100%,4%,1);
+  background-image:
+  radial-gradient(at 73% 83%, hsla(237,67%,11%,1) 0px, transparent 50%),
+  radial-gradient(at -10% 26%, hsla(240,51%,21%,1) 0px, transparent 50%),
+  radial-gradient(at 130% 0%, hsla(189,100%,56%,0.3) 0px, transparent 50%),
+  radial-gradient(at 0% 96%, hsla(240,100%,70%,0.37) 0px, transparent 50%),
+  radial-gradient(at 100% 130%, rgba(255, 255, 255, 0.5) 0%, transparent 50%);
+  backdrop-filter: blur(300px);
 }
   
-
 .horizon{
   height: 1px;
-  width: 80%;
+  width: 90%;
   margin: auto;
   background: radial-gradient( cyan 0%, transparent 70%);
 }
