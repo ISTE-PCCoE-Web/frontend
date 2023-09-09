@@ -1,8 +1,13 @@
 //@ts-nocheck
 import React from 'react';
 import "../components/Team/team.css"
-import { Card } from '../components';
+import { Card, TeamCarousel } from '../components';
 import membersData from "../utils/members.json"
+
+import {
+    Heading,
+    Text
+} from "@chakra-ui/react"
 
 // The Team component displays a list of team members using the Card component
 export default function Team() {
@@ -11,9 +16,20 @@ export default function Team() {
             {/* Team section */}
             <section>
                 {/* Heading */}
-                <div className="row">
-                    <h1>Our Team</h1>
-                </div>
+                <Heading
+                    fontWeight={600}
+                    textAlign={'center'}
+                    p={'4em 1em 2em 1em'}
+                    fontSize={{ base: '2xl', sm: '2xl', md: '2xl' }}
+                    lineHeight={'110%'}>
+                    <Text
+                        fontSize={{ base: "2.5rem", sm: "2.2rem", md: "2.5rem", lg: "50px" }}
+                        color = "white"
+                        fontWeight="bold"
+                    >
+                        Core Team
+                    </Text>
+                </Heading>
 
                 {/* Displaying team members using the Card component */}
                 <div className="row">
@@ -23,6 +39,7 @@ export default function Team() {
                         <Card member={member} />
                     ))}
                 </div>
+
             </section>
         </div>
     )

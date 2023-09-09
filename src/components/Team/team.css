@@ -1,11 +1,17 @@
 .teamContainer{
-    font-family: sans-serif;
-    width: 100%;
-    background-color: #000819;
+    background-color:hsla(237,100%,4%,1);
+  background-image:
+  radial-gradient(at 73% 83%, hsla(237,67%,11%,1) 0px, transparent 50%),
+  radial-gradient(at -10% 26%, hsla(240,51%,21%,1) 0px, transparent 50%),
+  radial-gradient(at 130% 0%, hsla(189,100%,56%,0.3) 0px, transparent 50%),
+  radial-gradient(at 0% 96%, hsla(240,100%,70%,0.37) 0px, transparent 50%),
+  radial-gradient(at 100% 130%, rgba(255, 255, 255, 0.5) 0%, transparent 50%);
+  backdrop-filter: blur(300px);
 }
 
 .row{
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 2em 1em;
     margin: auto;
