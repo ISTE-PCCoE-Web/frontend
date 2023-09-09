@@ -61,6 +61,7 @@
 }
 .card:hover .img-container{
     transform: scale(1.1);
+    transition: 0.3s;
 }
 @media screen and (min-width: 200px){
     .column{
