@@ -1,0 +1,43 @@
+#logo{
+    animation: fill-animation 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 262px; 
+    stroke-dashoffset: 261.90px;
+    animation: line-animation 3.5s ease forwards;
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 510px; 
+    stroke-dashoffset: 510px;
+    animation: line-animation 3.5s ease forwards;
+}
+
+#logo path:nth-child(3){
+    stroke-dasharray: 378px; 
+    stroke-dashoffset: 378px;
+    animation: line-animation 3.5s ease forwards;
+}
+
+#logo path:nth-child(4){
+    stroke-dasharray: 485px; 
+    stroke-dashoffset: 485px;
+    animation: line-animation 3.5s ease forwards;
+}
+
+
+@keyframes line-animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-animation{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
