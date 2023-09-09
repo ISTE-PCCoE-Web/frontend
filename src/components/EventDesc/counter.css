@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #000018;
 }
 
 .timer-container{
@@ -13,7 +13,7 @@
 }
 
 .timer{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000018;
     display: flex;
     align-items: center;
     padding-bottom: 7em;
@@ -37,7 +37,7 @@
     20%,
     24%,
     55% {
-      color: #111;
+      color: #000018;
       text-shadow: none;
     }
   
@@ -61,7 +61,7 @@
     20%,
     24%,
     55% {
-      color: #111;
+      color: #000018;
       text-shadow: none;
     }
   

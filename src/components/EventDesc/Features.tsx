@@ -31,9 +31,10 @@ const Feature = ({ title, icon }: FeatureProps) => {
 
 export default function Features() {
   return (
-    <Box p={4} bg={'black'}
+    <Box p={4} bg={'#000018'}
     paddingTop={'3em'}
-    paddingBottom={'3em'}>
+    paddingBottom={'3em'}
+    >
       <SimpleGrid columns={{ base: 1, md: 3 }} margin={'auto'} maxW={'5xl'} spacing={10}>
         <Feature
           icon={<Icon as={FcAssistant} w={10} h={10} />}
