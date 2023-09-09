@@ -1,9 +1,21 @@
 .eventContainer{
-    background-color: black;
-
+  background-color: #000418 ;
 }
-hr.horizon{
-    width: 80%;
-    margin: auto;
-    border-color: rgb(132, 30, 214);
+
+.eventGradient1{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 40%;
+  width: 35%;
+  /* background: linear-gradient(90deg, rgb(161, 242, 246, 0.2) 0%, rgba(43,241,251,0.2) 30%); */
+  /* filter: blur(300px); */
+}
+  
+
+.horizon{
+  height: 1px;
+  width: 80%;
+  margin: auto;
+  background: radial-gradient( cyan 0%, transparent 70%);
 }

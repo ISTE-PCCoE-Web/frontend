@@ -2,5 +2,6 @@
     width: 80%;
     max-width: 100%;
     min-width: 300px; 
-    height: 85vh;
+    max-height: 85vh;
+    min-height: 20vh;
 }

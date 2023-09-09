@@ -12,6 +12,7 @@ export default function EventDesc() {
         <Hero/>
         <img src={debate} id="poster" alt="" />
         <Features/>
+        <div className="horizon"/>
         <Frequent/>
         <Counter/>
     </div>

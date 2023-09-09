@@ -27,17 +27,17 @@ const AboutPage: React.FC = () => {
       mb="2rem"
     >
       <Flex flexDirection="column" paddingTop="2rem">
-        <Heading as="h2" fontSize={{base: "50px", sm: "60px", md: "70", lg:"80px"}}  padding="50px 0px 0px 2rem" textAlign={{base: "center", lg: "left"}}>
+        <Heading as="h2" fontSize={{base: "50px", sm: "60px", md: "70", lg:"80px"}}  padding={{base: "50px 0 0", md: "50px 0px 0px 2rem"}} textAlign={{base: "center", lg: "left"}}>
           who are we?
         </Heading>
-        <Text fontSize="24px" padding="50px 0px 0px 2rem" w={{base: "90%", sm: "80%", lg: "65%"}} mx={{base: "auto", lg: "0"}} textAlign={{base: "center", lg: "left"}}>
+        <Text fontSize={{base: "18px", md:"24px"}} padding={{base: "50px 0 0", md: "50px 0px 0px 2rem"}} w={{base: "90%", sm: "80%", lg: "65%"}} mx={{base: "auto", lg: "0"}} textAlign={{base: "center", lg: "left"}}>
           We are a community of passionate students who are committed to
           advancing technology education and innovation. Our chapter is a part
           of the larger Indian Society for Technical Education (ISTE), which is
           a global organization dedicated to empowering educators to transform
           learning and teaching through the effective use of technology.
         </Text>
-        <Flex justifyContent={{base: "center", lg: "left"}} pl="2rem">
+        <Flex justifyContent={{base: "center", lg: "left"}} pl={{base: "0", md:"2rem"}}>
           <Button
               fontSize="24px"
               my="1rem"
