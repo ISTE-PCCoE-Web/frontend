@@ -21,7 +21,7 @@ export default function Frequent() {
       paddingBottom={'5em'}
       align={'center'}
       justify={'center'}
-      bg={useColorModeValue('black', 'gray.800')}>
+      bg={"#000018"}>
       <Container alignContent={'center'}>
         <Heading
           fontWeight={600}
@@ -33,14 +33,14 @@ export default function Frequent() {
             FAQs
           </Text>
         </Heading>
-        <Accordion allowMultiple width="100%" maxW="5xl" bg="black" rounded="lg">
+        <Accordion allowMultiple width="100%" maxW="5xl" bg="#000018" rounded="lg">
           <AccordionItem>
             <AccordionButton
               display="flex"
               alignItems="center"
               justifyContent="space-between"
               p={4}
-              _hover={{ bg: 'gray.900' }}>
+              _hover={{ bg: 'blue.900' }}>
               <Text fontSize="md" color="white">
                 What is Technical debate about?
               </Text>
@@ -58,7 +58,7 @@ export default function Frequent() {
               alignItems="center"
               justifyContent="space-between"
               p={4}
-              _hover={{ bg: 'gray.900' }}>
+              _hover={{ bg: 'blue.900' }}>
               <Text fontSize="md" color="white">
                 What are the prizes?
               </Text>
@@ -76,7 +76,7 @@ export default function Frequent() {
               alignItems="center"
               justifyContent="space-between"
               p={4}
-              _hover={{ bg: 'gray.900' }}>
+              _hover={{ bg: 'blue.900' }}>
               <Text fontSize="md" color="white">
                 What is the judging criteria?
               </Text>
