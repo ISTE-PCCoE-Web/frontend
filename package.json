@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy":"https://us-central1-iste-pccoe.cloudfunctions.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,8 @@
     "@types/node": "^16.18.42",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
     "faker": "^6.6.6",
     "framer-motion": "^10.16.1",
     "randomcolor": "^0.6.2",

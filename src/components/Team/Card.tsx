@@ -7,16 +7,20 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 // The Card component receives a 'member' prop containing details about a team member
 export default function Card(props) {
-  return (
+  let image_url_builder="https://drive.google.com/uc?export=view&id=";
+  // image_url_builder+=props.member.imageUrl;
+  // props.member.imageUrl=image_url_builder;
+if(!props.member.imageUrl) props.member.imageUrl="https://robohash.org/hicveldicta.png?size=50x50&set=set1";
+  return (  
     <div className="column">
       <div className="card">
         {/* Display the profile image */}
         <div className="img-container">
-          <img src={props.member.image} alt="" />
+          <img src={image_url_builder+props.member.imageUrl} alt="" />
         </div>
         
         {/* Display the member's full name */}
-        <h3>{props.member.firstName + " " + props.member.lastName}</h3>
+        <h3>{props.member.firstname + " " + props.member.lastname}</h3>
         
         {/* Display the member's position */}
         <p>{props.member.position}</p>
@@ -29,12 +33,12 @@ export default function Card(props) {
           </a>
           
           {/* Display a LinkedIn icon with a link if a LinkedIn profile is available */}
-          <a href={props.member.socials && props.member.socials.linkedin} className="icon">
+          <a href={props.member.socials && props.member.socials.LinkedIn} className="icon">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           
           {/* Display a GitHub icon with a link if a GitHub profile is available */}
-          <a href={props.member.socials && props.member.socials.github} className="icon">
+          <a href={props.member.socials && props.member.socials.Github} className="icon">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>

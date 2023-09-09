@@ -6,6 +6,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import { Home, Events, EventDesc, Feedback, Team } from './pages';
+import {useEffect} from 'react';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  
   return (
     <Box>
       <RouterProvider router={router} />
