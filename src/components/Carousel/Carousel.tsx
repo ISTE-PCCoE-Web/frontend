@@ -6,13 +6,13 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './styles.css';
 
-import { EffectCards } from 'swiper';
+import { EffectCards, Pagination, Autoplay } from 'swiper';
 import { Flex, Text } from '@chakra-ui/react';
 
 function CardsCarousel({ cardsData, title }:any) {
   return (
-    <>
-      <Text fontSize="40px" color="#fff" fontWeight="semibold" textAlign="center">{title}</Text>
+    <> 
+      <Text fontSize={{base: "26px", sm: "30px", lg: "40px"}} color="#fff" fontWeight="semibold" textAlign="center">{title}</Text>
       <Swiper
         effect={'cards'}
         grabCursor={true}
@@ -32,4 +32,30 @@ function CardsCarousel({ cardsData, title }:any) {
     </>
   );
 }
-export { CardsCarousel }
+
+function QuotesCarousel({ cardsData, title }:any) {
+  return (
+    <> 
+      <Text fontSize={{base: "26px", sm: "30px", lg: "40px"}} color="#fff" fontWeight="semibold" textAlign="center">{title}</Text>
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        {cardsData.map((card: any) => {
+          return (
+            <SwiperSlide>{card}</SwiperSlide>
+          );
+        })}
+        
+      </Swiper>
+    </>
+  );
+}
+export { CardsCarousel, QuotesCarousel };

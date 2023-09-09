@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/feedback",
-    element: <Feedback />,
+    element: <EventDesc />,
   },
   {
     path: "/team",
