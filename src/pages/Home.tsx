@@ -59,12 +59,12 @@ const Home = () => {
     const hasVisitedBefore = sessionStorage.getItem("hasVisited");
 
     if (hasVisitedBefore) {
-      // setShowPageLoader(false);
+      setShowPageLoader(false);
     } else {
       sessionStorage.setItem("hasVisited", "true");
-      // setTimeout(() => setShowPageLoader(false), 5000);
+      setTimeout(() => setShowPageLoader(false), 5000);
     }
-    setTimeout(() => setShowPageLoader(false), 5000);
+    // setTimeout(() => setShowPageLoader(false), 5000);
   }, []);
 
   return (
@@ -308,9 +308,9 @@ const Home = () => {
                 bg="linear-gradient(90deg, rgba(43,241,251,1) 25%, rgba(43,241,251,1) 91%)"
                 bgClip="text"
                 bgBlendMode="transparent"
-                onClick={() => navigate("/teams")}
+                onClick={() => navigate("/Team")}
               >
-                View Team&nbsp;
+                View Team &nbsp;
                 <BsArrowRightCircle color="#fff" />
               </Button>
             </Flex>
@@ -417,7 +417,7 @@ const Home = () => {
                 connect.
               </Heading>
               <Text fontSize="24px" color="#fff" textAlign="left">
-                wanna stay connected us? visit our socials
+                wanna stay connected with us? visit our socials
               </Text>
               <Flex flexWrap="wrap" alignItems="center" my="1rem" gap="1.5rem">
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}}>

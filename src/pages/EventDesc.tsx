@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Features, Frequent, Counter } from '../components';
+import { Hero, Features, Frequent, Counter, Footer } from '../components';
 import '../components/EventDesc/eventDesc.css';
 import debate from '../img/Events/Debate.png';
 
@@ -15,6 +15,7 @@ export default function EventDesc() {
         <div className="horizon"/>
         <Frequent/>
         <Counter/>
+        <Footer/>
     </div>
   )
 }

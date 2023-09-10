@@ -15,14 +15,13 @@ const HeadDesign: React.FC<HeadDesignProps & BoxProps> = ({ teamName, ...rest })
       fontWeight={300}
       textAlign={'center'}
       p={'4em 1em 2em 1em'}
-      fontSize={{ base: '2xl', sm: '2xl', md: '2xl' }}
-      lineHeight={'110%'}
+      fontSize={{ base: '15px', sm: '20px', md: '1em' }}
+      // lineHeight={'110%'}
       {...rest}
     >
       <Text
-        fontSize={{ base: '2.5rem', sm: '2.2rem', md: '2.5rem', lg: '50px' }}
         color="white"
-        fontWeight="semi-bold"
+        fontWeight="bold"
       >
         {` ${teamName}`+` Team`}
       </Text>

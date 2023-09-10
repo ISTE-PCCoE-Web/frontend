@@ -30,7 +30,7 @@ if(!props.member.imageUrl) props.member.imageUrl="https://robohash.org/hicveldic
         {/* Social media icons */}
         <div className="icons">
           {/* Display an email icon with a link if an email is available */}
-          <a href={props.member.email} className="icon">
+          <a href={"mailto:"+props.member.email} className="icon">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
           

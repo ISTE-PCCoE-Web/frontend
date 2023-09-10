@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 import "../components/Events/events.css"
 
-import { UpcomingEvents, PastEvents, Navbar } from '../components'
+import { UpcomingEvents, PastEvents, Navbar, Footer } from '../components'
 
 import {
   Box,
@@ -16,6 +16,7 @@ export default function Events(){
       <UpcomingEvents/>
       <div className="horizon"/>
       <PastEvents/>
+      <Footer/>
     </div>
   )
 }
