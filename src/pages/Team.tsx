@@ -15,7 +15,7 @@ import axios from 'axios';
 interface SortableObject {
     [key: string]: any;
   }
-  
+    
   function sortByCustomOrder<T extends SortableObject>(
     array: T[],
     property: keyof T,
@@ -38,7 +38,9 @@ interface SortableObject {
     "Head Coordinator",
     "Member"
     ];
-const TeamSortOrder=["Head","Member"];
+
+    const TeamSortOrder=["Head","Member"];
+
 
 export default function Team() {
     const [membersData,setmembersData]=useState([]);
@@ -95,7 +97,7 @@ function populateData(ans, v1, v2, v3, v4, v5, v6, v7) {
         }
       }
     }
-    console.log("Coding team after populated",v2);
+    // console.log("Coding team after populated",v2);
   }
 
 useEffect(()=>{
