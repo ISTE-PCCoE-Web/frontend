@@ -29,8 +29,8 @@ import {
 } from "../components";
 import { EventData } from "../data/EventData";
 import collage from "../img/collage.jpg";
-import { BsArrowRightCircle, BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
+import { BsArrowRightCircle, BsFacebook, BsInstagram, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { Link, useNavigate } from "react-router-dom";
 import { CellData } from "../data/CellData";
 import contactImage from "../img/contactImage.png";
 import MainLoader from "../components/Page Loader/MainLoader";
@@ -421,16 +421,16 @@ const Home = () => {
               </Text>
               <Flex flexWrap="wrap" alignItems="center" my="1rem" gap="1.5rem">
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}}>
-                  <BsInstagram size="2rem" />
+                  <a href="https://www.instagram.com/iste_pccoe/"><BsInstagram size="2rem" /></a>
                 </Box>
-                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#4267B2"}}>
-                  <BsFacebook size="2rem" />
+                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#FF0000"}}>
+                  <a href="https://www.youtube.com" target="_blank"><BsYoutube size="2rem" /></a>
                 </Box>
-                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#0077b5"}}>
-                  <BsLinkedin size="2rem" />
+                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#0077b5"}}  onClick={() => navigate("https://www.linkedin.com/company/iste-pccoe-student-chapter")}>
+                  <a href="https://www.linkedin.com/company/iste-pccoe-student-chapter" target="_blank"><BsLinkedin size="2rem" /></a>
                 </Box>
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#fff", color:"#000"}}>
-                  <BsTwitter size="2rem" />
+                  <a href="https://twitter.com/iste_pccoe" target="_blank"><BsTwitter size="2rem" /></a>
                 </Box>
               </Flex>
               <Text fontSize="23px" color="#fff" textAlign="left" mt="2rem">

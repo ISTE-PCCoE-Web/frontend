@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Logo from "../../img/ISTELogo/ISTELogo.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = ({ color, ...props }: any) => {
@@ -24,11 +24,13 @@ const Navbar = ({ color, ...props }: any) => {
   const navLinks = [
     { name: "Home", link: "/home" },
     { name: "Teams", link: "/team" },
-    { name: "Feedback", link: "/feedback" },
+    { name: "Organize Talks", link: "/givetalk" },
   ];
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+
+  const { pathname } = useLocation();
 
   return (
     <Flex
@@ -44,10 +46,12 @@ const Navbar = ({ color, ...props }: any) => {
             return (
               <Button
                 variant="link"
-                color={color}
                 onClick={() => {
                   navigate(nav.link);
                 }}
+                transform={(pathname === nav.link) ? "scale(1.3)" : "scale(1)"}
+                color={(pathname === nav.link) ? "rgba(43,241,251,1)" : color}
+                fontWeight={(pathname === nav.link) ? "semibold" : "regular"}
               >
                 {nav.name}
               </Button>
@@ -112,11 +116,13 @@ const Navbar = ({ color, ...props }: any) => {
                   return (
                     <Button
                       variant="link"
-                      color={color}
                       onClick={() => {
                         navigate(nav.link);
                       }}
                       mb="2rem"
+                      fontSize="18px"
+                      color={(pathname === nav.link) ? "rgba(43,241,251,1)" : color}
+                      fontWeight={(pathname === nav.link) ? "semibold" : "regular"}
                     >
                       {nav.name}
                     </Button>
@@ -124,11 +130,13 @@ const Navbar = ({ color, ...props }: any) => {
                 })}
                 <Button
                   variant="link"
-                  color={color}
                   onClick={() => {
                     navigate("/events");
                   }}
                   mb="2rem"
+                  fontSize="18px"
+                  color={(pathname === "/events") ? "rgba(43,241,251,1)" : color}
+                  fontWeight={(pathname === "/events") ? "semibold" : "regular"}
                 >
                   Events
                 </Button>
