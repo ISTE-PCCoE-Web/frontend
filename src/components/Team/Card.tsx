@@ -23,12 +23,14 @@ if(!props.member.imageUrl) props.member.imageUrl="https://robohash.org/hicveldic
         <h3>{props.member.firstname + " " + props.member.lastname}</h3>
         
         {/* Display the member's position */}
+
         <p>{props.member.position}</p>
+        {/* <p>{props.member.team+" Team"}</p> */}
         
         {/* Social media icons */}
         <div className="icons">
           {/* Display an email icon with a link if an email is available */}
-          <a href={props.member.socials && props.member.socials.email} className="icon">
+          <a href={props.member.email} className="icon">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
           

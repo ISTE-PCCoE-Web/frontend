@@ -1,135 +1,600 @@
-    [
-      {
-        "id": 1,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "position": "President",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 2,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 3,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 4,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 5,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 6,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      },
-      {
-        "id": 7,
-        "firstName": "Ayush",
-        "lastName": "Dudhani",
-        "age": 21,
-        "gender": "male",
-        "phone": "+63 791 675 8914",
-        "username": "atuny0",
-        "password": "9uQFF1Lh",
-        "position": "President",
-        "socials": {
-            "email": "dudhaniayush@gmail.com",
-            "LinkedIn": "#",
-            "Github": "#"
-        },
-        "birthDate": "2000-12-25",
-        "image": "https://robohash.org/hicveldicta.png?size=50x50&set=set1",
-        "branch": "Computer Engineering"
-      }
-    ]
+[
+  {
+    "firstname": "Ayush",
+    "email": "dudhaniayush@gmail.com",
+    "imageUrl": "https:/president/ayush",
+    "position": "President",
+    "department": "Computer Engineering",
+    "socials": {
+      "LinkedIn": "linkedin.com/dudhaniayush",
+      "Github": "github.com/dudhaniayush"
+    },
+    "lastname": "dudhani",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Yash",
+    "position": "Vice President",
+    "email": "yash.patel20@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/yash-patel-80615b20a",
+      "Github": "https://github.com/Yaaashh"
+
+    },
+    "lastname": "Patel",
+    "imageUrl": "1DMX2O68JGfY06ZXOj43EONxQTWMJrwdW",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Sanchi",
+    "position": "Vice President",
+    "email": "sanchi.hisariya21@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/sanchi-hisariya-75020124b",
+      "Github": "https://github.com/sanchi2502"
+
+    },
+    "lastname": "Hisariya",
+    "imageUrl": "1WfzqrYlbz1gdqczb99bFH1U5os41d4GP",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Rishabh",
+    "position": "Vice President",
+    "email": "rishabh.sharma20@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/rishabh-sharma-a544a0164/",
+      "Github": "NA"
+
+    },
+    "lastname": "Sharma",
+    "imageUrl": "1JX6Zq-EzI9GowDEOXOOpe43nOi3jTH63",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Tejas",
+    "position": "Vice President",
+    "email": "tejas.kale20@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/tejas-kale-032464224",
+      "Github": "NA"
+
+    },
+    "lastname": "Kale",
+    "imageUrl": "1l_KGRQ3oBkT0lvYvDhNzeeJL-yabft0c",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Gaurav",
+    "position": "Vice President",
+    "email": "gaurav.chinchole20@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/gaurav-chinchole-04854522b",
+      "Github": "NA"
+
+    },
+    "lastname": "Chinchole",
+    "imageUrl": "1h5ANWrme6luOCwhYo4P0C1760OY0avdR",
+    "team": "Core"
+  },
+
+  {
+    "firstname": "Raj Singh",
+    "position": "Secretary",
+    "email": "rajsingh.nathawat21@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/raj-singh-nathawat-621a82236/",
+      "Github": "NA"
+
+    },
+    "lastname": "Nathawat",
+    "imageUrl": "1x3qDBKW2z-PEP6mldhaH9pE-Xcvq8AaE",
+    "team": "Core"
+  },
+  {
+    "firstname": "Sharad",
+    "position": "Joint Secretary",
+    "email": "sharad.narute21@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/sharad-narute-hp49",
+      "Github": "NA"
+    },
+    "lastname": "Narute",
+    "imageUrl": "18rT4zkCb1tbg6vL9iEGPqI8CLBqbPSGB",
+    "team": "Core"
+  },
+
+  {
+
+    "email": "amitesh.deshmukh20@pccoepune.org",
+    "firstname": "Amitesh ",
+    "lastname": "Deshmukh",
+    "position": "Management Head",
+    "Year of Study": "Fourth Year",
+    "Department": "Computer",
+    "Email ID (personal)": "amitesh2002.deshmukh@gmail.com",
+    "Email ID (official)": "amitesh.deshmukh20@pccoepune.org",
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/amitesh-deshmukh-70266a221",
+      "Instagram": "amitesh.0274",
+      "Github": "NA"
+
+    },
+    "imageUrl": "1yHN7MAdKY9j5apZmaG_7Qsa5Aplsbxaf",
+    "team": "Core"
+  },
+  {
+
+    "email": "aditya.jadhav20@pccoepune.org",
+    "firstname": "Aaditya",
+    "lastname": "Jadhav",
+    "position": "Head Coordinator",
+    "Year of Study": "Fourth Year",
+    "Department": "Computer",
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/aditya-jadhav-94283b21a",
+      "Instagram": "https://instagram.com/aditya_jadhav_710?igshid=MzRlODBiNWFlZA==",
+      "Twitter": "https://x.com/avjadhav_710?t=qyXpdLDVBj2vxHJa8U6-tA&s=08",
+
+      "Github": "NA"
+    },
+
+    "imageUrl": "1RsHDW6gyjLrWKubtQvsQrfbn7yQwQT4v",
+    "team": "Core"
+
+  },
+
+  {
+
+    "email": "sakshi.ghodke21@pccoepune.org",
+    "firstname": "Sakshi ",
+    "lastname": "Ghodke",
+    "position": "Member",
+    "Year of Study": "Fourth Year",
+    "Department": "Civil",
+    "Email ID (personal)": "sakshighodke1@gmail.com",
+    "Email ID (official)": "sakshi.ghodke21@pccoepune.org",
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/sakshi-ghodke-44a125235",
+      "Instagram": "NA",
+      "Twitter": "NA",
+      "Github": "NA"
+
+
+    },
+    "imageUrl": "1Rb-GGjep14kGgBlYm0sGWhg5WRrkgG_X",
+    "team": "Core"
+
+  },
+  {
+    "firstname": "Shrey",
+    "email": "shrey.ramdurgkar20@pccoepune.org",
+    "position": "Co-treasurer",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/shrey-ramdurgkar-10417b290",
+      "Github": "NA"
+
+    },
+    "lastname": "Ramdurgkar",
+    "imageUrl": "1zF5KoHpsjVdz3EC-d7LymaEiwamgSJ6X",
+    "team": "Core"
+  },
+
+  {
+    "email": "mayur.raut20@pccoepune.org",
+    "firstname": "Maur",
+    "lastname": "Raut",
+    "position": "Treasurer ",
+    "Year of Study": "Fourth Year",
+    "Department": "Civil",
+    "Email ID (personal)": "mayursraut1@gmail.com",
+    "Email ID (official)": "mayur.raut20@pccoepune.org",
+    "socials": {
+      "LinkedIn": "NA",
+      "Instagram": "NA",
+      "Twitter": "NA",
+      "Github": "NA"
+
+    },
+    "imageUrl": "1WK0SSleMfvOcoiYIwIqr2HYAAEUL6cSW",
+    "team": "Core"
+
+  },
+  {
+    "firstname": "Mangesh",
+    "email": "mangesh.dudhgaonkarpatil20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/mangesh-dudhgaonkar-patil-422870209/",
+      "Github": "https://github.com/Mangesh1511"
+
+    },
+    "lastname": "Dudhgaonkar",
+    "imageUrl": "152R3fXWBUc2uSliS66dx-1NjQpwUuy4g",
+    "team": "Coding"
+  },
+  {
+    "firstname": "Ashwin",
+    "email": "ashwin.acharya20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "NA",
+      "Github": "https://github.com/ashwin-acharya01"
+
+    },
+    "lastname": "Acharya",
+    "imageUrl": "NA",
+    "team": "Web"
+  },
+  {
+    "firstname": "Abhijeet",
+    "email": "abhijeet.bhushari20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/mangesh-dudhgaonkar-patil-422870209/",
+      "Github": "https://github.com/Abhijeet-Bhushari"
+
+    },
+    "lastname": "Bhushari",
+    "imageUrl": "NA",
+    "team": "Coding"
+  },
+
+  {
+    "firstname": "Vikrant",
+    "email": "Vikrant.ulmale20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "Na",
+      "Github": "Na"
+
+    },
+    "lastname": "Ulmale",
+    "imageUrl": "1sX_Pe-v-6ZU5zF1fFHRAHLsosxh1VcJP",
+    "team": "Event Management"
+  },
+
+  {
+    "email": "samarth.chaudhari21@pccoepune.org",
+    "firstname": "Samarth ",
+    "lastname": "Chaudhari ",
+    "position": "Head",
+    "Year of Study": "Fourth Year",
+    "Department": "Civil",
+    "Email ID (personal)": "chaudharisamarth02@gmail.com",
+    "Email ID (official)": "samarth.chaudhari21@pccoepune.org",
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/samarth-chaudhari-a4a37924a",
+      "Instagram": "https://instagram.com/chaudhari_samarth_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==",
+      "Twitter": "NA",
+      "Github": "NA"
+
+
+    },
+    "imageUrl": "1ZPEUwoASJK3ITzHAQeJS8tFPik0axgDE",
+    "team": "Marketing"
+  },
+  {
+    "firstname": "Sushant",
+    "email": "sushant.chaudhari20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://in.linkedin.com/in/sushant-chaudhari-b49a90205",
+      "Github": "https://github.com/sushantcoder13"
+
+    },
+    "lastname": "Chaudhari",
+    "imageUrl": "1bF9i0NE3MYB1m5wHcvbIgJfrjKXLrUn9",
+    "team": "Event Management"
+  },
+  {
+    "firstname": "Kshitij",
+    "email": "kshitij.wani20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/kshitij-wani-76830628b",
+      "Github": "NA"
+
+    },
+    "lastname": "Wani",
+    "imageUrl": "1NtALQW8y2315b1ONIkJs0zo6yUAGM4Nt",
+    "team": "Design"
+
+  },
+  {
+    "firstname": "Girish",
+    "email": "girish.bhosale20@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/feed/",
+      "Github": "https://github.com/Girish345"
+
+    },
+    "lastname": "Bhosale",
+    "imageUrl": "1njblDEMOcxZdeupWeRF9WWY3uk32-xar",
+    "team": "Web"
+  },
+  {
+    "firstname": "Ashish",
+    "email": "ashish.ram22@pccoepune.org",
+    "position": "Head",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/ashish-ram-4a1a39257",
+      "Github": "NA"
+
+    },
+    "lastname": "Ram",
+    "imageUrl": "1QfvLlUufrBdXqZCNJJGNQErMlVVJB1yh",
+    "team": "Supporting"
+  },
+  {
+    "position": "Head",
+    "email": "kartavya.parhate22@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/kartavya-parhate-34b670259",
+      "Github": "NA"
+
+    },
+    "firstname": "Kartavya",
+    "lastname": "Parhate",
+    "imageUrl": "1bFHIztoGyJhBO_R4sTOJqapFQvqfk6L7",
+    "team": "Supporting"
+  },
+
+  {
+    "firstname": "Nikhil",
+    "email": "nikhil.pattewar22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/nikhilpattewar",
+      "Github": "https://github.com/PATTEWARNIKHIL"
+
+    },
+    "lastname": "Pattewar",
+    "imageUrl": "1CEE4am8xbaoJYSpk9DeIbZ8lrk0rngaD",
+    "team": "Supporting"
+  },
+  {
+    "firstname": "Premved",
+    "email": "premved.dhote22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/premved-dhote-750835259",
+      "Github": "https://github.com/PR3MM"
+
+    },
+    "lastname": "Dhote",
+    "imageUrl": "1_A3_MHeQuRn2hJD3tyX0ZgB4fIbHukmI",
+    "team": "Web"
+  },
+
+  {
+    "firstname": "Rohan",
+    "email": "rohan.dupade20@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/rohan-dupade-97a411224/",
+      "Github": "https://github.com/rohanD11"
+
+    },
+    "lastname": "Dupade",
+    "imageUrl": "1ZL-d-9meuWqk_Jeph2iWUR8PS6Hg2wzE",
+    "team": "Web"
+  },
+  {
+    "position": "Member",
+    "email": "amar.pawar22@pccoepune.org",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/amar-pawar-a13372245",
+      "Github": "NA"
+
+    },
+    "firstname": "Amar",
+    "lastname": "Pawar",
+    "imageUrl": "1q0Ih6NDAC9EEMDwkBy0-_FEWRdHBTsPG",
+    "team": "Event Management"
+  },
+  {
+    "firstname": "Shweta",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/shweta-shinde-073380211",
+      "Github": "https://github.com/Shwet1240"
+
+    },
+    "lastname": "Shinde",
+    "imageUrl": "1qiiZwHbiKUMzhHHE1RmSceMUEHLdcZL2",
+    "team": "web",
+    "email": "shweta.shinde21@pccoepune.org"
+  },
+  {
+    "firstname": "Vinay",
+    "email": "vinay.chopade21@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/vinay-chopade-92923b183",
+      "Github": "NA"
+
+    },
+    "lastname": "Chopade",
+    "imageUrl": "1iP1iT5-EHr8bM2Jrl6w9DTOIduqn_yp8",
+    "team": "Web"
+  },
+
+
+
+  {
+    "firstname": "Sourav",
+    "email": "sourav.narvekar22@pccoepune.org",
+    "position": "Member",
+    "department": "Computer",
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/sourav-narvekar-a29778257",
+      "Github": "https://github.com/Mastermind730"
+
+    },
+    "lastname": "Narvekar",
+    "imageUrl": "1pQK_j8W3i5O1yTnByx0sHaqTRT5bFtOA",
+    "team": "Web"
+  },
+
+  {
+    "firstname": "Preshit",
+    "email": "preshit.roje20@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/preshit-roje-819933220/",
+      "Github": "https://github.com/preshitroje"
+
+    },
+    "lastname": "Roje",
+    "imageUrl": "1oyUFtCbUzB2_ATBUwJ6l6LX_OsZyAIpa",
+    "team": "Coding"
+  },
+
+  {
+    "firstname": "Vedant",
+    "email": "vedant.gaikar22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/vedant-gaikar-920668259",
+      "Github": "https://github.com/vedx07"
+
+    },
+    "lastname": "Gaikar",
+    "imageUrl": "1VFBWGLh4lJdv4k0sP1Ctkhx5NaP7aA51",
+    "team": "Event Management"
+  },
+
+
+  {
+    "firstname": "Omkar",
+    "email": "omkar.late21@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/omkar-late-30161323b",
+      "Github": "NA"
+
+    },
+    "lastname": "Late",
+    "imageUrl": "1xf-B_Rh5FTGoRFatvm2GgeK9qEMiOKoM",
+    "team": "Event Management"
+  },
+  {
+    "firstname": "Prajwal",
+    "email": "prajwal.dhoke22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/prajwal-dhoke-540787257",
+      "Github": "NA"
+
+    },
+    "lastname": "Dhoke",
+    "imageUrl": "1uVBB3alVqr64jrTD1TOFOds1Am999fkn",
+    "team": "Supporting"
+  },
+  {
+    "firstname": "Aarti",
+    "email": "aarti.chaude21@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "NA",
+      "Github": "NA"
+    },
+    "lastname": "Chaude",
+    "imageUrl": "1u4fkqOAdw9Hdn1nn5BcRFUclulZ7SvuW",
+    "team": "Supporting"
+  },
+  {
+    "firstname": "Pranav",
+    "email": "pranav.patil221@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/pranav-patil-87397028b",
+      "Github": "NA"
+    },
+    "lastname": "Patil",
+    "imageUrl": "1GRVcFKzMnU82KBIQnvVtJ5ycdgDDa4Km",
+    "team": "Web"
+  },
+
+
+  {
+    "firstname": "Vasundhara",
+    "email": "vasundhara.chile22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/vasundhara-chile-30a976274",
+      "Github": "https://github.com/C-Vasundhara27"
+    },
+    "lastname": "Chile",
+    "imageUrl": "1iehPPa73Fum1zXZF-Kd71TRPCDNZ7WZl",
+    "team": "Event Management"
+
+  },
+
+  {
+    "firstname": "Himanshu",
+    "email": "himanshu.patel22@pccoe.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/himanshu-patel-%F0%9F%91%A6%F0%9F%8F%BB-1b43bb222",
+      "Github": "NA"
+
+    },
+    "lastname": "Patel",
+    "imageUrl": "1JUcBa7NRjQuPgf1FJG_uXq832M1-v87A",
+    "team": "Marketing"
+  },
+
+  {
+    "firstname": "Arnav",
+    "email": "arnav.joshi22@pccoepune.org",
+    "position": "Member",
+    "department": null,
+    "socials": {
+      "LinkedIn": "https://www.linkedin.com/in/arnav-joshi-320479259",
+      "Github": "NA"
+
+    },
+    "lastname": "Joshi",
+    "imageUrl": "1-U_am4TjWseMhA7nxcJQDmMTQXQEg5Qm",
+    "team": "Design"
+  }
+]
