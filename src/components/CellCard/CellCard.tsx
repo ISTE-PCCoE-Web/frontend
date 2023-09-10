@@ -8,7 +8,6 @@ const CellCard = ({cellIcon, cellName, cellInfo, bgColor,...props} : any) => {
   return (
     <Box 
       as={motion.div}
-      padding="1rem"
       minWidth="280px"
       minHeight="200px"
       maxWidth="450px"
@@ -23,12 +22,12 @@ const CellCard = ({cellIcon, cellName, cellInfo, bgColor,...props} : any) => {
       {...props}
     >
       {!selected ? (
-        <Flex justifyContent="center" alignItems="center" flexDir="column" w="100%" h="100%">
+        <Flex justifyContent="center" alignItems="center" flexDir="column" w="100%" h="100%" padding="1rem">
           <Img src={cellIcon} alt={"cell-icon"} w="45%" h="100%"/>
           <Heading as="h5" fontSize={{base: "24px", md:"30px"}} textAlign="center" mt="auto">{cellName}</Heading>
         </Flex>
       ) : (
-        <Box h="100%" as={motion.div} animate={{rotateY : selected ? 180 : 0,}} display="flex" gap="1.5rem" justifyContent="center" alignItems="center" flexDir="column">
+        <Box h="100%" as={motion.div} animate={{rotateY : selected ? 180 : 0,}} padding="1rem" borderRadius="1.5rem" display="flex" gap="1.5rem" justifyContent="center" alignItems="center" bg={bgColor} flexDir="column">
           <Text textAlign="center" fontWeight="semibold">{cellInfo}</Text>
           <Button>View Activities</Button>
         </Box>

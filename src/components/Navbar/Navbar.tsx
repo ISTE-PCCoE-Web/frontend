@@ -122,6 +122,16 @@ const Navbar = ({ color, ...props }: any) => {
                     </Button>
                   );
                 })}
+                <Button
+                  variant="link"
+                  color={color}
+                  onClick={() => {
+                    navigate("/events");
+                  }}
+                  mb="2rem"
+                >
+                  Events
+                </Button>
               </Stack>
             </DrawerBody>
           </DrawerContent>
