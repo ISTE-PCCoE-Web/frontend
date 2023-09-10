@@ -1,7 +1,7 @@
 //@ts-nocheck
 import React from 'react';
 import "../components/Team/team.css"
-import { Card, TeamCarousel, Navbar} from '../components';
+import { Card, TeamCarousel, Navbar, Sponsors, Footer } from '../components';
 import HeadDesign from '../components/Team/HeadDesign';
 import dummyData from "../utils/members.json";
 
@@ -9,7 +9,7 @@ import {
     Heading,
     Text
 } from "@chakra-ui/react"
-import {useEffect,useState} from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 interface SortableObject {
@@ -111,7 +111,6 @@ useEffect(()=>{
                  setDesignTeam(sortByCustomOrder(DesignTeam,'position',TeamSortOrder));
                  setSupportingTeam(sortByCustomOrder(supportingTeam,'position',TeamSortOrder));
                  setmarketingTeam(sortByCustomOrder(marketingTeam,'position',TeamSortOrder));
-     
             })
             .catch((err)=>{
                 console.log(err);
@@ -212,6 +211,8 @@ useEffect(()=>{
                         <Card member={member} />
                     ))}
                 </div>
+                <Sponsors/>
+                <Footer/>
             </section>
         </div>
     )
