@@ -1,7 +1,7 @@
 //@ts-nocheck
 import React from 'react';
 import "../components/Team/team.css"
-import { Card, TeamCarousel} from '../components';
+import { Card, TeamCarousel, Navbar} from '../components';
 import HeadDesign from '../components/Team/HeadDesign';
 import dummyData from "../utils/members.json";
 
@@ -157,6 +157,7 @@ useEffect(()=>{
     return (
         <div className="teamContainer">
             {/* Team section */}
+            <Navbar color="#fff" p="1rem 2rem"/>
             <section>
                 {/* Heading */}
                 <HeadDesign teamName="Core"/>
