@@ -1,9 +1,14 @@
 import React from "react";
+import { Navbar } from "../components";
+
+import "./styles/givetalks.css";
 
 const GiveTalk = () => {
   return (
-    <form>
-      <h1 style={{ color: "black" }}>
+    <>
+    <Navbar />
+    <form className="talk-form">
+      <h1 style={{ color: "#fff" }}>
         Speaker <span> suggestion </span>
       </h1>
       <input type="text" name="name" id="" placeholder="Enter your name" />
@@ -18,10 +23,11 @@ const GiveTalk = () => {
         placeholder="Enter speaker detail"
       />
       {/* <textarea name="stopic" id ="" cols={20} rows={10} placeholder='Enter topic'/> */}
-      <button type="submit" name="submit">
+      <button className="button" type="submit" name="submit">
         submit
       </button>
     </form>
+    </>
   );
 };
 
