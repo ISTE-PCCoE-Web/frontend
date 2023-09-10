@@ -27,7 +27,10 @@ interface SortableObject {
       return indexA - indexB;
     });
   }
-
+interface SortableObject {
+    [key: string]: any;
+  }
+  
   const coreTeamSortOrder = ["President",
    "Vice President",
    "Secretary",
@@ -38,10 +41,8 @@ interface SortableObject {
     "Head Coordinator",
     "Member"
     ];
-
-    const TeamSortOrder=["Head","Member"];
-
-
+const TeamSortOrder=["Head","Member"];
+  
 export default function Team() {
     const [membersData,setmembersData]=useState([]);
     const [coreTeam,setcoreTeam]=useState([]);
@@ -52,20 +53,11 @@ export default function Team() {
     const [marketingTeam,setmarketingTeam]=useState([]);
     const [supportingTeam,setSupportingTeam]=useState([]);
 
-const v1=[],v2=[],v3=[],v4=[],v5=[],v6=[],v7=[];
-
 function populateData(ans, v1, v2, v3, v4, v5, v6, v7) {
-    // console.log("populate function called with ",ans);
-    // v1=[];
-    // v2=[];
-    // v3=[];
-    // v4=[];
-    // v5=[];
-    // v6=[];
-    // v7=[];
+   
     ans=JSON.parse(ans);
     for (const v of ans) {
-        // console.log(v);
+ 
       if (v.team === undefined) {
         continue;
       } else {
@@ -97,7 +89,7 @@ function populateData(ans, v1, v2, v3, v4, v5, v6, v7) {
         }
       }
     }
-    // console.log("Coding team after populated",v2);
+
   }
 
 useEffect(()=>{
