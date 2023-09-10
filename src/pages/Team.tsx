@@ -12,12 +12,33 @@ import {
 import {useEffect,useState} from 'react';
 import axios from 'axios';
 
-// The Team component displays a list of team members using the Card component
-// const [isLoading,setIsLoading]=useState(true);
+interface SortableObject {
+    [key: string]: any;
+  }
+  
+  function sortByCustomOrder<T extends SortableObject>(
+    array: T[],
+    property: keyof T,
+    customOrder: (keyof T)[]
+  ): T[] {
+    return [...array].sort((a, b) => {
+      const indexA = customOrder.indexOf(a[property]);
+      const indexB = customOrder.indexOf(b[property]);
+      return indexA - indexB;
+    });
+  }
 
-
-   
-    
+  const coreTeamSortOrder = ["President",
+   "Vice President",
+   "Secretary",
+   "Joint Secretary",
+   "Treasurer",
+   "Co-treasurer",
+    "Management Head",
+    "Head Coordinator",
+    "Member"
+    ];
+const TeamSortOrder=["Head","Member"];
 
 export default function Team() {
     const [membersData,setmembersData]=useState([]);
@@ -28,113 +49,104 @@ export default function Team() {
     const [DesignTeam,setDesignTeam]=useState([]);
     const [marketingTeam,setmarketingTeam]=useState([]);
     const [supportingTeam,setSupportingTeam]=useState([]);
-    // const [Heads,setHeads]=useState([]);
-    // const [Members,setMembers]=useState([]);
-    
 
-    console.log(membersData.length,"no of members currently in the team are:");
-    console.log();
-    useEffect(()=>{
+const v1=[],v2=[],v3=[],v4=[],v5=[],v6=[],v7=[];
+
+function populateData(ans, v1, v2, v3, v4, v5, v6, v7) {
+    // console.log("populate function called with ",ans);
+    // v1=[];
+    // v2=[];
+    // v3=[];
+    // v4=[];
+    // v5=[];
+    // v6=[];
+    // v7=[];
+    ans=JSON.parse(ans);
+    for (const v of ans) {
+        // console.log(v);
+      if (v.team === undefined) {
+        continue;
+      } else {
+        const teamName = v.team.toUpperCase();
+        console.log(teamName);
+        switch (teamName) {
+          case 'CORE':
+            v1.push(v);
+            break;
+          case 'CODING':
+            v2.push(v);
+            break;
+          case 'WEB':
+            v3.push(v);
+            break;
+          case 'EVENT MANAGEMENT':
+            v4.push(v);
+            break;
+          case 'DESIGN':
+            v5.push(v);
+            break;
+          case 'SUPPORTING':
+            v6.push(v);
+            break;
+          case 'MARKETING':
+            v7.push(v);
+            break;
+         
+        }
+      }
+    }
+    console.log("Coding team after populated",v2);
+  }
+
+useEffect(()=>{
 
         const fetchData=async()=>{
             const response=await axios.get("https://us-central1-iste-pccoe.cloudfunctions.net/getTeamData")
             .then((ans)=>{
-                // console.log(ans);
                 setmembersData(ans.data);
-                const v1=[],v2=[],v3=[],v4=[],v5=[],v6=[],v7=[];
-                for(const v of ans.data){
-                    if(v.team==undefined){
-                        console.log(v);
-                    }
-                    else if((v.team).toUpperCase()==="CORE"){
-                      
-                         v1.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="CODING"){
-                       
-                         v2.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="WEB"){
-                       
-                         v3.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="EVENT MANAGEMENT"){
-                       
-                         v4.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="DESIGN"){
-                       
-                         v5.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="SUPPORTING"){
-                       
-                         v6.push(v);
-                     }
-                     else if((v.team).toUpperCase()==="MARKETING"){
-                     
-                         v7.push(v);
-                     }
-                     
-                 }
-              
-                 setcoreTeam(sortByCustomOrder(v1,'position',coreTeamSortOrder));
-                 setcodingTeam(sortByCustomOrder(v2,'position',TeamSortOrder));
-                 setwebTeam(sortByCustomOrder(v3,'position',TeamSortOrder));
-
-                 seteventTeam(sortByCustomOrder(v4,'position',TeamSortOrder));
-                 setDesignTeam(sortByCustomOrder(v5,'position',TeamSortOrder));
-                 setSupportingTeam(sortByCustomOrder(v6,'position',TeamSortOrder));
-                 setmarketingTeam(sortByCustomOrder(v7,'position',TeamSortOrder));
-                //  setHeads(v2);
-                //  setMembers(v3);
+                console.log(typeof(ans.data));
+                localStorage.setItem("membersData",JSON.stringify(ans.data));
                 
 
+                populateData(ans.data,coreTeam,codingTeam,webTeam,eventTeam,DesignTeam,supportingTeam,marketingTeam);
+              
+                 setcoreTeam(sortByCustomOrder(coreTeam,'position',coreTeamSortOrder));
+                 setcodingTeam(sortByCustomOrder(codingTeam,'position',TeamSortOrder));
+                 setwebTeam(sortByCustomOrder(webTeam,'position',TeamSortOrder));
+                 seteventTeam(sortByCustomOrder(eventTeam,'position',TeamSortOrder));
+                 setDesignTeam(sortByCustomOrder(DesignTeam,'position',TeamSortOrder));
+                 setSupportingTeam(sortByCustomOrder(supportingTeam,'position',TeamSortOrder));
+                 setmarketingTeam(sortByCustomOrder(marketingTeam,'position',TeamSortOrder));
+     
             })
             .catch((err)=>{
                 console.log(err);
             })
         }
+        const inLocalStorage=localStorage.getItem("membersData");
+       if(!inLocalStorage){
+        fetchData();
+       }
+       else{
+        console.log("Getting the data from the local storage");
+        const data=localStorage.getItem("membersData");
+        setmembersData(data);
+            
+            if(codingTeam.length==0||eventTeam.length==0||supportingTeam.length==0||DesignTeam.length==0||coreTeam.length==0||marketingTeam.length==0){
+                 populateData(data,coreTeam,codingTeam,webTeam,eventTeam,DesignTeam,supportingTeam,marketingTeam);
+                 setcoreTeam(sortByCustomOrder(coreTeam,'position',coreTeamSortOrder));
+                 setcodingTeam(sortByCustomOrder(codingTeam,'position',TeamSortOrder));
+                 setwebTeam(sortByCustomOrder(webTeam,'position',TeamSortOrder));
+                 seteventTeam(sortByCustomOrder(eventTeam,'position',TeamSortOrder));
+                 setDesignTeam(sortByCustomOrder(DesignTeam,'position',TeamSortOrder));
+                 setSupportingTeam(sortByCustomOrder(supportingTeam,'position',TeamSortOrder));
+                 setmarketingTeam(sortByCustomOrder(marketingTeam,'position',TeamSortOrder));
+                
+            }
+       }
 
-       
-        if(membersData.length==0)fetchData();
-        // else PopulateData();
-       
     },[]);
-    
-    interface SortableObject {
-        [key: string]: any;
-      }
-      
-      function sortByCustomOrder<T extends SortableObject>(
-        array: T[],
-        property: keyof T,
-        customOrder: (keyof T)[]
-      ): T[] {
-        return [...array].sort((a, b) => {
-          const indexA = customOrder.indexOf(a[property]);
-          const indexB = customOrder.indexOf(b[property]);
-          return indexA - indexB;
-        });
-      }
 
-      const coreTeamSortOrder = ["President",
-       "Vice President",
-       "Secretary",
-       "Joint Secretary",
-       "Treasurer",
-       "Co-treasurer",
-        "Management Head",
-        "Head Coordinator",
-        "Member"
-        ];
-    const TeamSortOrder=["Head","Member"];
-
-      
-        
-      
-      
-      
-    
     return (
         
         <div className="teamContainer">
@@ -205,9 +217,6 @@ export default function Team() {
                         <Card member={member} />
                     ))}
                 </div>
-
-               
-
             </section>
         </div>
     )
