@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 
 
-import "./about.css";
+import "./styles/about.css";
 import { Footer } from "../components"
 import { Box, Heading, Text, Image, Flex, Button, SimpleGrid, Stack, Container } from "@chakra-ui/react";
 import { BsArrowRightCircle } from "react-icons/bs";
