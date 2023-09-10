@@ -37,6 +37,7 @@ import MainLoader from "../components/Page Loader/MainLoader";
 import RahulPatil from "../img/ProfRAP.jpeg";
 import Sambare from "../img/ProfSambare.jpg";
 import Rajput from "../img/ProfSSR.jpg";
+import Quotations from "../img/quotations.png";
 import { testimonials } from "../data/Testimonials";
 
 const Home = () => {
@@ -119,10 +120,6 @@ const Home = () => {
               justifyContent="center"
               alignItems="center"
             >
-              {/* <Text fontSize={{base: "30px", md: "40px"}} color="#fff" fontWeight="semibold">
-            PCCoE's
-          </Text> */}
-              {/* <Flex flexDir={"row"} alignItems="baseline" flexWrap="wrap" justifyContent={{base: "center", md: "left"}}> */}
               <Text
                 fontSize={{
                   base: "3.5rem",
@@ -138,12 +135,7 @@ const Home = () => {
               >
                 ISTE&nbsp;PCCoE
               </Text>
-              {/* <Text fontSize={{base: "2.5rem", sm: "3.5rem", md: "4rem", lg: "5rem"}} lineHeight={{base: "3rem", sm: "3.5rem", md: "4rem", lg: "5rem"}} bg="rgba(255, 255, 255 ,1)"
-            bgClip="text"
-            bgBlendMode="transparent" fontWeight="medium">
-              Chapter
-            </Text> */}
-              {/* </Flex> */}
+              
               <Text
                 fontWeight="semibold"
                 color="#fff"
@@ -152,15 +144,7 @@ const Home = () => {
               >
                 Students Chapter
               </Text>
-              {/* <Text
-                fontSize={{ base: "18px", sm: "22px", md: "26px", lg: "30px" }}
-                mt={{ base: "1.5rem", md: "0" }}
-                textAlign="center"
-                color="#fff"
-                fontWeight="medium"
-              >
-                Diverse Branches, Collective Brilliance
-              </Text> */}
+              
               <AnimatedSentences sentences={["Illuminating minds for unfolding excellence", "Diverse Branches, Collective Brilliance", "Crafting Ideas, Engineering Solutions"]}/>
               <Button
                 size="lg"
@@ -217,6 +201,7 @@ const Home = () => {
                 bg="linear-gradient(90deg, rgba(43,241,251,1) 25%, rgba(43,241,251,1) 91%)"
                 bgClip="text"
                 bgBlendMode="transparent"
+                onClick={() => navigate("/events")}
               >
                 View Past Events&nbsp;
                 <BsArrowRightCircle color="#fff" />
@@ -283,6 +268,7 @@ const Home = () => {
                       bg="#fff"
                       width="100%"
                       height="100%"
+                      cursor="pointer"
                     />
                   </GridItem>
                 );
@@ -332,7 +318,7 @@ const Home = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              gap="1.5rem"
+              gap="2rem"
               mt="1rem"
               flexWrap="wrap"
             >
@@ -369,8 +355,8 @@ const Home = () => {
             cardsData = {testimonials.map((item) => {
               return (
                 <Box width="100%" bg="#ffffff50" h="50%" borderRadius="1rem" backdropFilter="blur(5px)" color="#fff" padding="1.5rem">
-                    <Text fontSize={{base:"2.5rem", md: "3rem"}}>"</Text>
-                    <Text fontSize={{base:"1.5rem", md: "1.8rem"}}>{item.message}</Text>
+                    <Img src={Quotations}/>
+                    <Text fontSize={{base:"1.2rem", md: "1.5rem"}}>{item.message}</Text>
                     <Flex alignItems="center" mt="1rem" gap="1.5rem">
                       <Img width={{base: "1.5rem", md: "2rem"}} height={{base: "1.5rem", md: "2rem"}} borderRadius="full" src={item.image} alt="prof-image"/>
                       <Box>
@@ -410,6 +396,7 @@ const Home = () => {
           {/* Connect */}
           <Box
             display="flex"
+            flexDirection={{base: "column", md: "row"}}
             justifyContent="space-between"
             alignItems="center"
             borderTopLeftRadius="2rem"
@@ -417,10 +404,10 @@ const Home = () => {
             bg="linear-gradient(180deg, rgba(0,82,100,1) 0% ,rgba(0,1,22,1) 25%)"
             p="1rem"
           >
-            <Box w="50%" padding="1rem" borderRadius="2rem">
+            <Box w={{base: "80%", md: "50%"}} padding="1rem" borderRadius="2rem">
               <Img src={contactImage} alt="img" />
             </Box>
-            <Box w="50%">
+            <Box w={{base: "100%", md: "50%"}} padding={{base: "2rem", md:"1rem"}}>
               <Heading
                 as="h1"
                 color="#fff"
@@ -432,7 +419,7 @@ const Home = () => {
               <Text fontSize="24px" color="#fff" textAlign="left">
                 wanna stay connected us? visit our socials
               </Text>
-              <Flex flexWrap="wrap" alignItems="center" justifyContent="center" my="1rem" gap="1.5rem">
+              <Flex flexWrap="wrap" alignItems="center" my="1rem" gap="1.5rem">
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}}>
                   <BsInstagram size="2rem" />
                 </Box>
