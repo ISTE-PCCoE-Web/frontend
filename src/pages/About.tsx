@@ -1,12 +1,14 @@
-import React from "react";
+//@ts-nocheck
+
+import { ReactNode } from "react";
 
 
 import "./about.css";
 import { Footer } from "../components"
-import { Box, Heading, Text, Image, Flex, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Flex, Button, SimpleGrid, Stack, Container } from "@chakra-ui/react";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import about_imag from "../img/about-us-1.png"
+import about_image from "../img/ISTELogo/ISTELogo.png"
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -18,70 +20,121 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper';
 
 
-const About: React.FC = () => {
-    return ( <>
+export default function About() {
+  return (
     <div className="Box" >
-    <h1 className="heading">About Us</h1>
-  <div className="content">
-          <p className="para">
-            Indian Society for Technical Education (ISTE) is the leading National
-            Professional non-profit making Society for the Technical Education in the
-            field of engineering and technology registered under the Societies
-            Registration Act of 1860. The organization established in the year 1941 with
-            the motto of Career Development of Engineering Teachers and Personality
-            Development of Students and overall development of our Technical Education
-            System.
-          </p>
-          <p className="para">
-            At present, ISTE has a very large and an effective membership base
-            consisting of 1,35,525 technical teachers as Life Members, 5 lakh Student
-            members, 3052 Institutional Members (including IITs, IISc., NITs and other
-            leading technical institutions), 1453 faculty chapters and 1649 students’
-            chapters and 19 Sections at State level throughout the country. The major
-            objective of the ISTE is to provide quality training programmes to the
-            teachers and the administrators of technical institutions. This is enabling
-            to update their knowledge and skills in their fields and lead to the
-            production and development of top-quality professional engineers and
-            technicians needed by the industry and other organisations.
-          </p>
+      <section className="about-us">
+        <div className="about">
+          <img src={about_image} className="logo" />
+          <div className="text">
+            <h2>About Us</h2>
+            <h5>WE ARE HERE TO <span>BRING CHANGE</span></h5>
+            <p>Indian Society for Technical Education (ISTE) is the leading National
+              Professional non-profit making Society for the Technical Education in the
+              field of engineering and technology registered under the Societies
+              Registration Act of 1860. The organization established in the year 1941 with
+              the motto of Career Development of Engineering Teachers and Personality
+              Development of Students and overall development of our Technical Education
+              System.</p>
+            <div className="data">
+              <a href="#" className="hire">ISTE Official</a>
+            </div>
+          </div>
         </div>
-        <div className="abtimg">
-          <img src={about_imag} alt="image"  />
-        </div>
-        <h1 className="subheading">Our Image Gallery</h1>
-         <div className="image-gallery">
-        <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 80,
-          
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-      
-      </Swiper>
-      </div>     
-      </div>
-      <Footer/>
-    </>);
-};
+      </section>
+      <Box width={'100%'}>
+        <Box p={{ base: '0 1em', lg: '0 10em' }}>
+          <Stack direction={{ base: 'row', lg: 'column' }}>
+            <Stack
+              flex={1}
+              color={'gray.100'}
+              justify={{ lg: 'center' }}
+              py={{ base: 4, md: 10, lg: 10 }}
+            >
+              <Box
+                mb={{ base: 8, md: 10 }}
+              >
+                <Text
+                  fontFamily={'heading'}
+                  fontWeight={700}
+                  textTransform={'uppercase'}
+                  mb={3}
+                  fontSize={'xl'}
+                  color={'gray.100'}>
+                  Our Mission
+                </Text>
+                <Heading color={'white'} mb={5} fontSize={{ base: 'xl', md: '5xl' }}>
+                  Empowering India's Tech Education
+                </Heading>
+                <Text fontSize={{ base: 'l', md: '20px' }} color={'gray.100'}>
+                  By fostering collaboration among educators, 
+                  facilitating knowledge exchange, and promoting innovative teaching methods, 
+                  ultimately elevating the standard of technical education across India.
+                </Text>
+              </Box>
 
-export default About;
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 10, md: 10, lg: 10 }}>
+                {stats.map((stat) => (
+                  <Box key={stat.title}>
+                    <Text fontFamily={'heading'} fontSize={'3xl'} color={'white'} mb={3}>
+                      {stat.title}
+                    </Text>
+                    <Text fontSize={'xl'} color={'gray.400'}>
+                      {stat.content}
+                    </Text>
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Stack>
+          </Stack>
+        </Box>
+      </Box>
+      <Footer />
+    </div>
+  )
+}
+
+
+const StatsText = ({ children }: { children: ReactNode }) => (
+  <Text as={'span'} fontWeight={700} color={'white'}>
+    {children}
+  </Text>
+)
+
+const stats = [
+  {
+    title: '100+',
+    content: (
+      <>
+        <StatsText>Colleges covered</StatsText> in order to spread the technical expertise 
+        among future engineers.
+      </>
+    ),
+  },
+  {
+    title: '47+',
+    content: (
+      <>
+        <StatsText>Years of experience</StatsText> with a solid foundation for serving Indian 
+        Institutions. 
+      </>
+    ),
+  },
+  {
+    title: '138',
+    content: (
+      <>
+        <StatsText>Members</StatsText> trying their best to implement the vision of ISTE through due diligence
+        and hardwork.
+      </>
+    ),
+  },
+  {
+    title: '25000+',
+    content: (
+      <>
+        <StatsText>Members</StatsText> currently serving their institutions under the guidance and supervision of ISTE.
+      </>
+    ),
+  },
+]
