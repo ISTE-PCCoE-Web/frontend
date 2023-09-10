@@ -1,4 +1,5 @@
 .teamContainer{
+    height: 100%;
     background-color:hsla(237,100%,4%,1);
   background-image:
   radial-gradient(at 73% 83%, hsla(237,67%,11%,1) 0px, transparent 50%),

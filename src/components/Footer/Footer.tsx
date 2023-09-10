@@ -46,6 +46,12 @@ const SocialButton = ({
 }
 
 export default function Footer() {
+
+  const footerText = {
+    fontSize: '15px',
+    color: 'white'
+  }
+
   return (
     <div className = 'footerContainer'>
       <Container
@@ -56,7 +62,7 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text fontSize={'s'}>© 2023 ISTE-PCCoE Student Chapter. All rights reserved</Text>
+        <p style={footerText}>© 2023 ISTE-PCCoE Student Chapter. All rights reserved</p>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
