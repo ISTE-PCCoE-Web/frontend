@@ -2,6 +2,7 @@ import React from "react";
 
 
 import "./about.css";
+import { Footer } from "../components"
 import { Box, Heading, Text, Image, Flex, Button } from "@chakra-ui/react";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -79,7 +80,7 @@ const About: React.FC = () => {
       </Swiper>
       </div>     
       </div>
-
+      <Footer/>
     </>);
 };
 

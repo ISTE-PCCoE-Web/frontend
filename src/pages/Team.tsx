@@ -27,7 +27,33 @@ interface SortableObject {
       return indexA - indexB;
     });
   }
+interface SortableObject {
+    [key: string]: any;
+  }
+  
+  function sortByCustomOrder<T extends SortableObject>(
+    array: T[],
+    property: keyof T,
+    customOrder: (keyof T)[]
+  ): T[] {
+    return [...array].sort((a, b) => {
+      const indexA = customOrder.indexOf(a[property]);
+      const indexB = customOrder.indexOf(b[property]);
+      return indexA - indexB;
+    });
+  }
 
+  const coreTeamSortOrder = ["President",
+   "Vice President",
+   "Secretary",
+   "Joint Secretary",
+   "Treasurer",
+   "Co-treasurer",
+    "Management Head",
+    "Head Coordinator",
+    "Member"
+    ];
+const TeamSortOrder=["Head","Member"];
   const coreTeamSortOrder = ["President",
    "Vice President",
    "Secretary",
