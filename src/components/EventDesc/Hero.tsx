@@ -12,7 +12,7 @@ import {
 
 export default function Hero() {
   return (
-    <Container bg={'black'}>
+    <Container bg={'#000018'}>
       <Stack
         textAlign={'center'}
         align={'center'}
@@ -59,11 +59,11 @@ export default function Hero() {
             Register
           </Button>
           <Button
+            variant={'outline'}
             rounded={'full'}
             px={6}
-            colorScheme={'orange'}
-            bg={'orange.500'}
-            _hover={{ bg: 'orange.700' }}>
+            colorScheme={'cyan'}
+            _hover={{ bg: 'cyan.900' }}>
             Rules and Regulations
           </Button>
         </Stack>

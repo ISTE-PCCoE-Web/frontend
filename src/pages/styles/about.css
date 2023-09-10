@@ -1,0 +1,103 @@
+.Box::before {
+  background-color:hsla(237,100%,4%,1);
+  background-image:
+  radial-gradient(at 73% 83%, hsla(237,67%,11%,1) 0px, transparent 50%),
+  radial-gradient(at -10% 26%, hsla(240,51%,21%,1) 0px, transparent 50%),
+  radial-gradient(at 130% 0%, hsla(189,100%,56%,0.3) 0px, transparent 50%),
+  radial-gradient(at 0% 96%, hsla(240,100%,70%,0.37) 0px, transparent 50%),
+  radial-gradient(at 100% 130%, rgba(255, 255, 255, 0.5) 0%, transparent 50%);
+  backdrop-filter: blur(100px);
+}
+.about-us{
+  width: 100%;
+  padding: 90px 0 40px 0;
+  color: white;
+}
+.about{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo{
+  height: auto;
+  width:  500px;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #3ba6b258;
+  border: 1px solid #4070f4;
+}
+
+
+@media screen and (max-width: 800px){
+   .pic{
+      display: none;
+   }
+   .about{
+    display: block;
+    width: 100%;
+   }
+   .text{
+    max-width: 100%;
+    margin: auto;
+   }
+   .text h2{
+    font-size: 30px;
+   }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+  .pic{
+    margin-top: 20px;
+    max-width: 300px;
+  }
+  .text{
+    max-width: 420px;
+  }
+  .text h2{
+    font-size: 40px;
+  }
+  .text h5{
+    font-size: 1em;
+  }
+  .text p{
+    font-size: 1em;
+  }
+
+}

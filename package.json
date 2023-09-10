@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy":"https://us-central1-iste-pccoe.cloudfunctions.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.431",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -20,6 +23,8 @@
     "@types/node": "^16.18.42",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
     "faker": "^6.6.6",
     "framer-motion": "^10.16.1",
     "randomcolor": "^0.6.2",
@@ -28,6 +33,7 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "swiper": "^9.3.2",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"

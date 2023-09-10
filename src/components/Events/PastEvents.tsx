@@ -18,6 +18,7 @@ import {
 
 export default function PastEvents() {
     return (
+
         <div className='PastContainer'>
             <Stack
                 textAlign={'center'}
@@ -30,7 +31,11 @@ export default function PastEvents() {
                     fontWeight={600}
                     fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
                     lineHeight={'110%'}>
-                    <Text maxW={'5xl'} as={'span'} color={'white'}>
+                    <Text
+                        fontSize={{ base: "2.5rem", sm: "2.2rem", md: "2.5rem", lg: "50px" }}
+                        color = "white"
+                        fontWeight="bold"
+                    >
                         Past Events
                     </Text>
                 </Heading>

@@ -1,28 +1,38 @@
 .column{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 25%;
+    max-width: 25%;
     padding: 0 1em;
-    margin: 2em auto;
+    margin: 2em 0;
 }
 .card{
     /* box-shadow: 0 0 0.2em rgba(114, 114, 243, 0.216); */
-    padding: 6em 1em;
+    padding: 3em 1em;
     border-radius: 0.6em;
     color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #181a25;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    background-color: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 }
 .card .img-container{
+    /* object-fit: cover;
+    overflow: hidden; */
     width: 8em;
     height: 8em;
     background-color: #2c00da;
-    padding: 0.5em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
+    position: relative;
 }
 .card img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
     border-radius: 50%;
 }
 .card h3{
@@ -53,12 +63,13 @@
     font-size: 1.4em;
 }
 .card:hover{
-    background: linear-gradient(#1b0979, #0e023c);
+    transform: scale(1.01);
     color: #ffffff;
-    box-shadow: 0 0 0.5em rgba(63, 63, 255, 0.649);
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.1);
 }
 .card:hover .img-container{
     transform: scale(1.1);
+    transition: 0.3s;
 }
 @media screen and (min-width: 200px){
     .column{
@@ -83,11 +94,11 @@
 }
 @media screen and (min-width: 992px){
     .column{
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
+        flex: 0 0 25%;
+        max-width: 25%;
         padding: 0 1em;
     }
     .card{
-        padding: 6em 0;
+        padding: 2em 0;
     }
 }

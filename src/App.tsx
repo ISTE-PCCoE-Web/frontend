@@ -1,10 +1,12 @@
+//@ts-nocheck
 import React from 'react';
 import logo from './logo.svg';
-import About from './components/About/About';
+// import About from './components/About/About';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
-import { Home, Events, EventDesc, Feedback, Team } from './pages';
+import { Home, Events, EventDesc, Feedback, Team, About } from './pages';
+import {useEffect} from 'react';
 
 const router = createBrowserRouter([
   {
@@ -20,16 +22,27 @@ const router = createBrowserRouter([
     element: <Events />,
   },
   {
-    path: "/feedback",
-    element: <Feedback />,
+    path: "/givetalk",
+    element: <EventDesc />,
   },
   {
     path: "/team",
     element: <Team />,
   },  
+  {
+    path: "/events/eventDesc",
+    element: <EventDesc />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+
+
 ]);
 
 function App() {
+  
   return (
     <Box>
       <RouterProvider router={router} />

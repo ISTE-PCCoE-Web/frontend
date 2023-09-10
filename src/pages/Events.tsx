@@ -1,13 +1,22 @@
-import React from 'react'
+//@ts-nocheck
+import { useEffect, useRef } from 'react'
 import "../components/Events/events.css"
 
-import { UpcomingEvents, PastEvents } from '../components'
-export default function Events() {
+import { UpcomingEvents, PastEvents, Navbar, Footer } from '../components'
+
+import {
+  Box,
+  Badge,
+  Image
+} from '@chakra-ui/react';
+export default function Events(){
   return (
-    <div>
+    <div className="eventContainer">
+      <Navbar color="#fff" p="1rem 2rem"/>
       <UpcomingEvents/>
-      <hr />
+      <div className="horizon"/>
       <PastEvents/>
+      <Footer/>
     </div>
   )
 }

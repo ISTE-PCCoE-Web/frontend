@@ -1,5 +1,5 @@
 export { default as About } from './About/About';
-export { CardsCarousel } from './Carousel/Carousel';
+export { CardsCarousel, QuotesCarousel } from './Carousel/Carousel';
 export { default as EventsCard } from './EventsCard/EventsCard';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as Hero } from './EventDesc/Hero';
@@ -8,4 +8,10 @@ export { default as Frequent } from './EventDesc/Frequent';
 export { default as Counter } from './EventDesc/Counter';
 export { default as UpcomingEvents } from './Events/UpcomingEvents'; 
 export { default as PastEvents } from './Events/PastEvents'; 
+export { default as ContactBackground } from './3dBackground/ContactBackground';
 export { default as Card} from './Team/Card';
+export { default as TeamCarousel } from './Team/TeamCarousel';
+export { default as CellCard } from './CellCard/CellCard';
+export { default as ScrollDownIndicator } from './ScrollDownIndicator/ScrollDownIndicator';
+export { default as Sponsors } from './Sponsors/Sponsors';
+export { default as Footer } from './Footer/Footer';
