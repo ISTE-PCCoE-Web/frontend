@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element: <Events />,
   },
   {
-    path: "/feedback",
+    path: "/givetalk",
     element: <EventDesc />,
   },
   {
