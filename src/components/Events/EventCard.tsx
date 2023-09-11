@@ -66,7 +66,7 @@ export default function EventCard(props) {
         </CardBody>
 
         <CardFooter>
-          <Link href='events/Debate'>
+          <Link href={"events/"+ props.CardData.eventSlug}>
             <Button
               marginRight={'1em'}
               colorScheme='cyan'
