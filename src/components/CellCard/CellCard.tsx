@@ -20,10 +20,14 @@ const CellCard = ({cellIcon, cellName, cellInfo, bgColor,...props} : any) => {
       transition={{ duration: "5s" }}
       borderRadius="1.5rem"
       {...props}
+      bgColor={"rgba(255, 255, 255, 0.1)"}
+      bg={"linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))"}
+      backdropFilter="blur(10px)"
+      border="2px solid #ffffff90"
     >
       {!selected ? (
-        <Flex justifyContent="center" alignItems="center" flexDir="column" w="100%" h="100%" padding="1rem">
-          <Img src={cellIcon} alt={"cell-icon"} w={{base: "70%", sm: "60%", md:"50%"}} h="100%"/>
+        <Flex justifyContent="center" alignItems="center" flexDir="column" w="100%" h="100%" padding="1rem" color="#fff" _hover={{color: "#000"}}>
+          <Img src={cellIcon} alt={"cell-icon"} w={{base: "70%", sm: "60%", md:"45%"}} h="100%"/>
           <Heading as="h5" fontSize={{base: "24px", md:"30px"}} textAlign="center" mt="auto">{cellName}</Heading>
         </Flex>
       ) : (
