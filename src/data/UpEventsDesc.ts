@@ -14,16 +14,16 @@ export const UpEventsDesc = [
         ],
         FAQs: [
             {
-                question: 'What is Technical debate about?',
-                answer: 'It\'s just a regular debate.'
+                question: 'What is Tark Vitark?',
+                answer: 'The Tark Vitark is a debate competition event hosted by ISTE PCCoE that brings together students from various backgrounds and departments from various backgrounds and departments to engage in thought provoking debates on important topics.'
             },
             {
-                question: 'What are the prizes?',
-                answer: 'Goodies'
+                question: 'When and where will the competition take place?',
+                answer: 'The competition will be held on 12/09/2023 in Classroom No. 6102 and 6103. Computer Building in our college campus.'
             },
             {
-                question: 'What is the judging criteria?', 
-                answer: 'Judges aren\'t decided yet.'
+                question: 'How can I register as a participant?', 
+                answer: 'To register, please visit our event website and follow the registration process. Ensure that you provide accurate information during registration.'
             }
         ]
     },
@@ -39,16 +39,16 @@ export const UpEventsDesc = [
         ],
         FAQs: [
             {
-                question: 'What is BGMI Tournament about?', 
-                answer: 'It\'s just a regular debate.'
+                question: 'When and where will the event take place?', 
+                answer: 'The event will take place on 12/09/2023 at your own place (home).'
             },
             {
-                question: 'What are the prizes?', 
-                answer: 'Goodies'
+                question: 'How do I register for the event?', 
+                answer: 'To register, fill the google form circulated.'
             },
             {
-                question: 'What is the judging criteria?',
-                answer: 'Judges aren\'t decided yet.'
+                question: 'Is there an entry fee to participate? ',
+                answer: 'No, participation in the BGMI Tournament is absolutely free!!'
             }
         ]
     }
