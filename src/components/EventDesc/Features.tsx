@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 'use client'
 
 import { ReactElement } from 'react'
@@ -29,7 +31,7 @@ const Feature = ({ title, icon }: FeatureProps) => {
   )
 }
 
-export default function Features() {
+export default function Features({Desc}) {
   return (
     <Box p={4} bg={'#000018'}
     paddingTop={'3em'}
@@ -38,15 +40,15 @@ export default function Features() {
       <SimpleGrid columns={{ base: 1, md: 3 }} margin={'auto'} maxW={'5xl'} spacing={10}>
         <Feature
           icon={<Icon as={FcAssistant} w={10} h={10} />}
-          title={'Improve your Presentation skills'}
+          title={Desc.features[0]}
         />
         <Feature
           icon={<Icon as={FcDonate} w={10} h={10} />}
-          title={'Free participation'}
+          title={Desc.features[1]}
         />
         <Feature
           icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title={'Win exciting Goodies'}
+          title={Desc.features[2]}
         />
       </SimpleGrid>
     </Box>

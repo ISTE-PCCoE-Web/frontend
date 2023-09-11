@@ -14,8 +14,8 @@ export default function Events(){
     <div className="eventContainer">
       <Navbar color="#fff" p="1rem 2rem"/>
       <UpcomingEvents/>
-      <div className="horizon"/>
-      <PastEvents/>
+      {/* <div className="horizon"/>
+      <PastEvents/> */}
       <Footer/>
     </div>
   )

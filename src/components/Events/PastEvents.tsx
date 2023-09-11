@@ -1,10 +1,6 @@
 import React from 'react'
 import EventCard from './EventCard';
 import './pastEvents.css'
-
-
-
-
 import {
     Flex,
     Container,
@@ -18,7 +14,6 @@ import {
 
 export default function PastEvents() {
     return (
-
         <div className='PastContainer'>
             <Stack
                 textAlign={'center'}
@@ -43,7 +38,6 @@ export default function PastEvents() {
             <EventCard />
             <EventCard />
             <EventCard />
-
         </div>
     )
 }
