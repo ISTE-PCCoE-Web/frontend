@@ -215,6 +215,7 @@ const Home = () => {
                     eventTitle={card.eventTitle}
                     eventDescription={card.eventDescription}
                     eventType={card.eventType}
+                    eventLink={card.eventLink}
                   />
                 );
               })}

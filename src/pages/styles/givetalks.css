@@ -1,13 +1,13 @@
 
 .talk-form{
-    display: block;
-    max-width: 600px;
+    /* display: block; */
+    width: 70%;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 3rem 1rem;
     border-radius: 2rem;
     
 }
-.talk-form input, textarea{
+.talk-form .input, .textarea{
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -26,4 +26,8 @@
     margin: 4px 2px;
     width:"100%";
     border-radius: 0.5rem;
+}
+
+.label{
+    color: #fff;
 }
