@@ -37,7 +37,7 @@ export const CellData = [
         color: "#ecb4e6",
     },
     {
-        cellName: "Embedded Systems and Robotics Cell",
+        cellName: "Robotics Cell",
         cellIcon: EmbeddedCell,
         cellInfo: "lorem ipsum dolor sit amet and consectetur adipiscing elit as et sap nothin",
         color: "#dff0f6",
