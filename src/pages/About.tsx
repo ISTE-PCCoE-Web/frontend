@@ -1,28 +1,23 @@
 //@ts-nocheck
-
 import { ReactNode } from "react";
-
-
 import "./styles/about.css";
-import { Footer } from "../components"
+import { Footer, Navbar } from "../components"
 import { Box, Heading, Text, Image, Flex, Button, SimpleGrid, Stack, Container } from "@chakra-ui/react";
-import { BsArrowRightCircle } from "react-icons/bs";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import about_image from "../img/ISTELogo/ISTELogo.png"
+
+// import { BsArrowRightCircle } from "react-icons/bs";
+// import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-
-
+// import 'swiper/css';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css/pagination';
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper';
-
+// import { EffectCoverflow, Pagination } from 'swiper';
 
 export default function About() {
   return (
     <div className="Box" >
+      <Navbar color="#fff" p="1.5rem 2rem"/>
       <section className="about-us">
         <div className="about">
           <img src={about_image} className="logo" />
@@ -66,7 +61,7 @@ export default function About() {
                 <Heading color={'white'} mb={5} fontSize={{ base: 'xl', md: '5xl' }}>
                   Empowering India's Tech Education
                 </Heading>
-                <Text fontSize={{ base: 'l', md: '20px' }} color={'gray.100'}>
+                <Text fontSize={{ base: '16px', md: '20px' }} color={'gray.100'}>
                   By fostering collaboration among educators, 
                   facilitating knowledge exchange, and promoting innovative teaching methods, 
                   ultimately elevating the standard of technical education across India.

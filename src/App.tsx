@@ -3,6 +3,7 @@ import React from 'react';
 import logo from './logo.svg';
 // import About from './components/About/About';
 import './App.css';
+import {UpEventsDesc} from './data/UpEventsDesc'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import { Home, Events, EventDesc, Feedback, Team, About, GiveTalk } from './pages';
@@ -16,6 +17,18 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/events",
+    element: <Events />,
+  },
+  {
+    path: "/events/debate",
+    element: <EventDesc Desc = {UpEventsDesc[0]} />,
+  },
+  {
+    path: "/events/BGMI",
+    element: <EventDesc Desc = {UpEventsDesc[1]} />,
   },
   {
     path: "/events",
@@ -43,6 +56,7 @@ const router = createBrowserRouter([
 
 function App() {
   
+  // console.log(UpEventsDesc[0]);
   return (
     <Box>
       <RouterProvider router={router} />
