@@ -1,13 +1,18 @@
+import TarkVitark from "../img/tark-vitark.jpeg";
+import BGMI from "../img/bgmi.jpeg";
+
 export const EventData = [
 {
-    img : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/debate-club-design-template-cbe1700cc89835c4416510fb228f3787_screen.jpg?ts=1561400195",
-    eventTitle: "Technical Debate",
-    eventDescription: "Join us for an electrifying intellectual showdown at 'Sparks of Insight'! Witness brilliant minds clash in a dynamic technical debate that promises sparks of wisdom, innovation, and thought-provoking discourse",
+    img : TarkVitark,
+    eventTitle: "Tark-Vitark",
+    eventDescription: "Witness brilliant minds clash in a dynamic debate that promises sparks of wisdom, innovation, and thought-provoking discourse",
     eventType: "upcoming",
+    eventLink: "events/Debate"
 },
 {
-    img : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/debate-club-design-template-cbe1700cc89835c4416510fb228f3787_screen.jpg?ts=1561400195",
-    eventTitle: "Technical Debate",
-    eventDescription: "Join us for an electrifying intellectual showdown at 'Sparks of Insight'! Witness brilliant minds clash in a dynamic technical debate that promises sparks of wisdom, innovation, and thought-provoking discourse",
+    img : BGMI,
+    eventTitle: "BGMI Tournament",
+    eventDescription: "Get ready for the ultimate BGMI showdown, where squads will battle it out for gaming glory in the most epic tournament of the year!",
     eventType: "upcoming",
+    eventLink: "events/BGMI",
 }];

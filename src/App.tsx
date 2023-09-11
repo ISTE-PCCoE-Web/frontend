@@ -6,7 +6,7 @@ import './App.css';
 import {UpEventsDesc} from './data/UpEventsDesc'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
-import { Home, Events, EventDesc, Feedback, Team, About } from './pages';
+import { Home, Events, EventDesc, Feedback, Team, About, GiveTalk } from './pages';
 import {useEffect} from 'react';
 
 const router = createBrowserRouter([
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/givetalk",
-    element: <EventDesc />,
+    element: <GiveTalk />,
   },
   {
     path: "/team",

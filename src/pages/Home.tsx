@@ -110,7 +110,7 @@ const Home = () => {
             scrollSnapAlign="start"
             scrollSnapStop="always"
             alignItems="center"
-            h="100vh"
+            h="100dvh"
           >
             <Navbar color={"#fff"} />
             <Flex
@@ -215,6 +215,7 @@ const Home = () => {
                     eventTitle={card.eventTitle}
                     eventDescription={card.eventDescription}
                     eventType={card.eventType}
+                    eventLink={card.eventLink}
                   />
                 );
               })}
