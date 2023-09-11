@@ -43,8 +43,9 @@ export default function Team() {
     const [DesignTeam, setDesignTeam] = useState([]);
     const [marketingTeam, setmarketingTeam] = useState([]);
     const [supportingTeam, setSupportingTeam] = useState([]);
+    const [technicalTeam,setTechnicalTeam]=useState([]);
 
-const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
+const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
     ans=JSON.parse(ans);
     for (const v of ans) {
         if (v.team === undefined) {
@@ -74,6 +75,8 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
             case 'MARKETING':
               v7.push(v);
               break;
+            case 'TECHNICAL':
+              v8.push(v);
            
           }
         }
@@ -88,7 +91,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
                 .then((data) => data.json())
                 .then((response) => {
                     setmembersData(response);
-                    const v1 = [], v2 = [], v3 = [], v4 = [], v5 = [], v6 = [], v7 = [];
+                    const v1 = [], v2 = [], v3 = [], v4 = [], v5 = [], v6 = [], v7 = [],v8=[];
                     for (const v of response) {
                         if (v.team === undefined) {
                             continue;
@@ -117,6 +120,8 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
                                 case 'MARKETING':
                                     v7.push(v);
                                     break;
+                                case 'TECHNICAL':
+                                    v8.push(v);
 
                             }
                         }
@@ -129,6 +134,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
                     setDesignTeam(sortByCustomOrder(v5, 'position', TeamSortOrder));
                     setSupportingTeam(sortByCustomOrder(v6, 'position', TeamSortOrder));
                     setmarketingTeam(sortByCustomOrder(v7, 'position', TeamSortOrder));
+                    setTechnicalTeam(sortByCustomOrder(v8,'position',TeamSortOrder));
                     localStorage.setItem("membersData", JSON.stringify(response));
 
                 })
@@ -140,8 +146,8 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
             const data = localStorage.getItem("membersData");
             // console.log(JSON.parse(data));
             const newData = JSON.parse(data);
-            if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0) {
-                populateData(data, coreTeam, codingTeam, webTeam, eventTeam, DesignTeam, supportingTeam, marketingTeam);
+            if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0|| technicalTeam.length == 0) {
+                populateData(data, coreTeam, codingTeam, webTeam, eventTeam, DesignTeam, supportingTeam, marketingTeam,technicalTeam);
                 setcoreTeam(sortByCustomOrder(coreTeam, 'position', coreTeamSortOrder));
                 setcodingTeam(sortByCustomOrder(codingTeam, 'position', TeamSortOrder));
                 setwebTeam(sortByCustomOrder(webTeam, 'position', TeamSortOrder));
@@ -149,10 +155,11 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
                 setDesignTeam(sortByCustomOrder(DesignTeam, 'position', TeamSortOrder));
                 setSupportingTeam(sortByCustomOrder(supportingTeam, 'position', TeamSortOrder));
                 setmarketingTeam(sortByCustomOrder(marketingTeam, 'position', TeamSortOrder));
+                setTechnicalTeam(sortByCustomOrder(technicalTeam,'position',TeamSortOrder));
             }
         }
 
-    }, []);
+    });
 
     return (
         <div className="teamContainer">
@@ -183,6 +190,15 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
                 <div className="row">
                     {/* Mapping over membersData to render each member using Card */}
                     {webTeam.map((member) => (
+                        // Rendering the Card component for each member
+                        <Card member={member} />
+                    ))}
+                </div>
+                <HeadDesign teamName="Technical" />
+                {/* Displaying team members using the Card component */}
+                <div className="row">
+                    {/* Mapping over membersData to render each member using Card */}
+                    {technicalTeam.map((member) => (
                         // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
