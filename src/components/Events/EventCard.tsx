@@ -7,6 +7,7 @@ import {
   CardBody,
   CardFooter,
   Button,
+  Link,
   Flex,
   Heading,
   Image,
@@ -39,7 +40,7 @@ export default function EventCard(props) {
       <Image
         objectFit='cover'
         maxW={{ base: '100%', sm: '300px' }}
-        src={debate}
+        src={props.CardData.poster}
         m={'1em'}
         borderRadius={'5px'}
         alt='Image'
@@ -65,25 +66,29 @@ export default function EventCard(props) {
         </CardBody>
 
         <CardFooter>
-          <Button
-            marginRight={'1em'}
-            colorScheme='cyan'
-            _hover={{
-              background: 'rgba(0,0,0,0.2)',
-            }}
-          >
-            About Event
-          </Button>
-          <Button
-            variant='outline'
-            marginRight={'1em'}
-            colorScheme='cyan'
-            _hover={{
-              background: 'rgba(0,0,0,0.2)',
-            }}
-          >
-            Register
-          </Button>
+          <Link href='events/Debate'>
+            <Button
+              marginRight={'1em'}
+              colorScheme='cyan'
+              _hover={{
+                background: 'rgba(0,0,0,0.2)',
+              }}
+            >
+              About Event
+            </Button>
+          </Link>
+          <Link href={props.CardData.registration} isExternal>
+            <Button
+              variant='outline'
+              marginRight={'1em'}
+              colorScheme='cyan'
+              _hover={{
+                background: 'rgba(0,0,0,0.2)',
+              }}
+            >
+              Register
+            </Button>
+          </Link>
         </CardFooter>
       </Stack>
     </Card>

@@ -7,7 +7,7 @@ export const UpEventsDesc = [
         eventDesc: 'Join the Verbal Arena: Unleash Your Argumentative Prowess in \'Tark Vitark\' – Where Words Become Weapons!',
         eventDay: '12 Sept',
         eventTime: '2:00 PM - 5:00 PM',
-        registration: '',
+        registration: 'https://forms.gle/xBPHrrTHdogEmV4W6',
         ruleBook: '',
         poster: Event1,
         features: [
@@ -33,7 +33,7 @@ export const UpEventsDesc = [
         eventDesc: 'Gear Up for Battle: Conquer the \'BGMI Showdown\' – Where Legends Clash and Victory Awaits!',
         eventDay: '12 Sept',
         eventTime: '6:30 PM - 10:30 PM',
-        registration: '',
+        registration: 'https://forms.gle/68SA5WWtzWoyFPax5',
         ruleBook: '',
         poster: Event2,
         features: [
