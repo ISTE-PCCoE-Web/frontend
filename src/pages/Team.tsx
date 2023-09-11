@@ -138,7 +138,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
         }
         else {
             const data = localStorage.getItem("membersData");
-            console.log(JSON.parse(data));
+            // console.log(JSON.parse(data));
             const newData = JSON.parse(data);
             if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0) {
                 populateData(data, coreTeam, codingTeam, webTeam, eventTeam, DesignTeam, supportingTeam, marketingTeam);

@@ -16,8 +16,10 @@ import 'swiper/css';
 // import required modules
 // import  {Pagination}  from 'swiper/modules';
 import { Pagination } from 'swiper';
+import { useNavigate } from "react-router-dom";
 
 const AboutPage: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <Box
       w="100%"
@@ -45,6 +47,7 @@ const AboutPage: React.FC = () => {
               bg="linear-gradient(90deg, rgba(43,241,251,1) 25%, rgba(43,241,251,1) 91%)"
               bgClip="text"
               bgBlendMode="transparent"
+              onClick={() => navigate("/about")}
             >
               Read More&nbsp;
               <BsArrowRightCircle color="#fff" />

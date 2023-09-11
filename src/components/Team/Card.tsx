@@ -35,10 +35,17 @@ export default function Card(props) {
           </a>
 
           {/* Display a LinkedIn icon with a link if a LinkedIn profile is available */}
-          <a href={props.member.socials.LinkedIn} className="icon">
+          {/* <a href={props.member.socials.LinkedIn} className="icon">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-
+          </a> */}
+          {(props.member.socials.LinkedIn.length>2 && props.member.socials.LinkedIn!=="NA")?(
+           <a href={props.member.socials.LinkedIn} className="icon">
+           <FontAwesomeIcon icon={faLinkedin} />
+           </a>
+          ):(<a href="" className="icon">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>)
+          }
           {/* Display a GitHub icon with a link if a GitHub profile is available */}
           {(props.member.socials.Github.length > 2 && props.member.socials.Github !== "NA") ? (
             <a href={props.member.socials.Github} className="icon">

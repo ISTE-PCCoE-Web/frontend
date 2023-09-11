@@ -23,7 +23,7 @@ const CellCard = ({cellIcon, cellName, cellInfo, bgColor,...props} : any) => {
     >
       {!selected ? (
         <Flex justifyContent="center" alignItems="center" flexDir="column" w="100%" h="100%" padding="1rem">
-          <Img src={cellIcon} alt={"cell-icon"} w="45%" h="100%"/>
+          <Img src={cellIcon} alt={"cell-icon"} w={{base: "70%", sm: "60%", md:"50%"}} h="100%"/>
           <Heading as="h5" fontSize={{base: "24px", md:"30px"}} textAlign="center" mt="auto">{cellName}</Heading>
         </Flex>
       ) : (

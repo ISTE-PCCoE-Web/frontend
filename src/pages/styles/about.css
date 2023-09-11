@@ -1,5 +1,5 @@
 .Box::before {
-  background-color:hsla(237,100%,4%,1);
+  background-color: radial-gradient(at 12% 11%, hsla(237,100%,4%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(240,99%,48%,0.21) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 20%);
   background-image:
   radial-gradient(at 73% 83%, hsla(237,67%,11%,1) 0px, transparent 50%),
   radial-gradient(at -10% 26%, hsla(240,51%,21%,1) 0px, transparent 50%),
@@ -10,7 +10,7 @@
 }
 .about-us{
   width: 100%;
-  padding: 90px 0 40px 0;
+  padding: 40px 0 40px 0;
   color: white;
 }
 .about{
