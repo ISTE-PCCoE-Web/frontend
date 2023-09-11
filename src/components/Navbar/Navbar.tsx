@@ -49,9 +49,9 @@ const Navbar = ({ color, ...props }: any) => {
                 onClick={() => {
                   navigate(nav.link);
                 }}
-                transform={(pathname === nav.link) ? "scale(1.3)" : "scale(1)"}
-                color={(pathname === nav.link) ? "rgba(43,241,251,1)" : color}
-                fontWeight={(pathname === nav.link) ? "semibold" : "regular"}
+                transform={(pathname === nav.link) ? "scale(1.3)" : (pathname === "/" && nav.link === "/home") ? "scale(1.3)" : "scale(1)"}
+                color={(pathname === nav.link) ? "rgba(43,241,251,1)" : (pathname === "/" && nav.link === "/home") ? "rgba(43,241,251,1)" : color}
+                fontWeight={(pathname === nav.link) ? "semibold" : (pathname === "/" && nav.link === "/home") ? "semibold" : "regular"}
               >
                 {nav.name}
               </Button>
