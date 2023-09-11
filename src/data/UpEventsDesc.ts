@@ -4,6 +4,7 @@ import Event2 from '../img/Events/BGMI.png'
 export const UpEventsDesc = [
     {
         eventTitle: 'Tark Vitark', 
+        eventDesc: 'Join the Verbal Arena: Unleash Your Argumentative Prowess in \'Tark Vitark\' – Where Words Become Weapons!',
         eventDay: '12 Sept',
         eventTime: '2:00 PM - 5:00 PM',
         registration: '',
@@ -29,13 +30,14 @@ export const UpEventsDesc = [
     },
     {
         eventTitle: 'BGMI Tournament', 
+        eventDesc: 'Gear Up for Battle: Conquer the \'BGMI Showdown\' – Where Legends Clash and Victory Awaits!',
         eventDay: '12 Sept',
         eventTime: '6:30 PM - 10:30 PM',
         registration: '',
         ruleBook: '',
         poster: Event2,
         features: [
-            'Be a speaker', 'Free Participation', 'Win exciting goodies'
+            'Show your gaming skills', 'Free Participation', 'Win exciting goodies'
         ],
         FAQs: [
             {
@@ -51,5 +53,6 @@ export const UpEventsDesc = [
                 answer: 'No, participation in the BGMI Tournament is absolutely free!!'
             }
         ]
+
     }
 ];
