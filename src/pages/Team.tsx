@@ -157,7 +157,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7)=>{
     return (
         <div className="teamContainer">
             {/* Team section */}
-            <Navbar color="#fff" p="1rem 2rem" />
+            <Navbar color="#fff" p="1.5rem 2rem" />
             <section>
                 {/* Heading */}
                 <HeadDesign teamName="Core" />

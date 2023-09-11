@@ -14,5 +14,5 @@ export const EventData = [
     eventTitle: "BGMI Tournament",
     eventDescription: "Get ready for the ultimate BGMI showdown, where squads will battle it out for gaming glory in the most epic tournament of the year!",
     eventType: "upcoming",
-    eventLink: "event/BGMI",
+    eventLink: "events/BGMI",
 }];
