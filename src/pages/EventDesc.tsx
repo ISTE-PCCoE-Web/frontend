@@ -1,19 +1,20 @@
+//@ts-nocheck
 import React from 'react'
 import { Hero, Features, Frequent, Counter, Footer, Navbar } from '../components';
 import '../components/EventDesc/eventDesc.css';
-import debate from '../img/Events/Debate.png';
+import debate from '../img/Events/Tark-Vitark Poster 2.png';
 
+export default function EventDesc({Desc}) {
 
-export default function EventDesc() {
-
+  // console.log(Desc);
   return (
     <div className="eventDescContainer">
         <Navbar p="1rem 2rem" color="#fff"/>
-        <Hero/>
-        <img src={debate} id="poster" alt="" />
-        <Features/>
+        <Hero Desc = {Desc}/>
+        <img src={Desc.poster} id="poster" alt="" />
+        <Features Desc = {Desc}/>
         <div className="horizon"/>
-        <Frequent/>
+        <Frequent Desc = {Desc}/>
         <Counter/>
         <Footer/>
     </div>

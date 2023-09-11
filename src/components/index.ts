@@ -13,4 +13,5 @@ export { default as Card} from './Team/Card';
 export { default as TeamCarousel } from './Team/TeamCarousel';
 export { default as CellCard } from './CellCard/CellCard';
 export { default as ScrollDownIndicator } from './ScrollDownIndicator/ScrollDownIndicator';
+export { default as Sponsors } from './Sponsors/Sponsors';
 export { default as Footer } from './Footer/Footer';

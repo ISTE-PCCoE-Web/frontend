@@ -1,24 +1,18 @@
 //@ts-nocheck
-
 import { ReactNode } from "react";
-
-
 import "./styles/about.css";
 import { Footer, Navbar } from "../components"
 import { Box, Heading, Text, Image, Flex, Button, SimpleGrid, Stack, Container } from "@chakra-ui/react";
-import { BsArrowRightCircle } from "react-icons/bs";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import about_image from "../img/ISTELogo/ISTELogo.png"
+
+// import { BsArrowRightCircle } from "react-icons/bs";
+// import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-
-
+// import 'swiper/css';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css/pagination';
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper';
-
+// import { EffectCoverflow, Pagination } from 'swiper';
 
 export default function About() {
   return (

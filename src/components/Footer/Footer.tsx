@@ -25,7 +25,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={useColorModeValue('#00001870', 'whiteAlpha.100')}
       rounded={'full'}
       w={8}
       h={8}
@@ -37,7 +37,7 @@ const SocialButton = ({
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: useColorModeValue('#000001840', 'whiteAlpha.200'),
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -46,6 +46,12 @@ const SocialButton = ({
 }
 
 export default function Footer() {
+
+  const footerText = {
+    fontSize: '15px',
+    color: 'white'
+  }
+
   return (
     <div className = 'footerContainer'>
       <Container
@@ -56,7 +62,7 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2023 ISTE-PCCoE Student Chapter. All rights reserved</Text>
+        <p style={footerText}>© 2023 ISTE-PCCoE Student Chapter. All rights reserved</p>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />

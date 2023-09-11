@@ -268,8 +268,9 @@ const Home = () => {
                       bgColor={item.color}
                       bg="#fff"
                       width="100%"
-                      height="100%"
+                      height="16em"
                       cursor="pointer"
+                      mx = 'auto'
                     />
                   </GridItem>
                 );
@@ -319,7 +320,7 @@ const Home = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              gap="2rem"
+              gap="6rem"
               mt="1rem"
               flexWrap="wrap"
             >

@@ -1,4 +1,4 @@
-'use client'
+//@ts-nocheck
 
 import {
   Accordion,
@@ -14,7 +14,7 @@ import {
 
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
-export default function Frequent() {
+export default function Frequent({Desc}) {
   return (
     <Flex
       paddingTop={'5em'}
@@ -34,7 +34,7 @@ export default function Frequent() {
           </Text>
         </Heading>
         <Accordion allowMultiple width="100%" maxW="5xl" bg="#000018" rounded="lg">
-          <AccordionItem>
+          {Desc.FAQs.map((item)=>(<AccordionItem>
             <AccordionButton
               display="flex"
               alignItems="center"
@@ -42,52 +42,16 @@ export default function Frequent() {
               p={4}
               _hover={{ bg: 'blue.900' }}>
               <Text fontSize="md" color="white">
-                What is Technical debate about?
+                {item.question}
               </Text>
               <ChevronDownIcon fontSize="24px" color={'white'} />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="white">
-                It's just a regular debate.
+              {item.answer}
               </Text>
             </AccordionPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionButton
-              display="flex"
-              alignItems="center"
-              justifyContent="space-between"
-              p={4}
-              _hover={{ bg: 'blue.900' }}>
-              <Text fontSize="md" color="white">
-                What are the prizes?
-              </Text>
-              <ChevronDownIcon fontSize="24px" color={'white'} />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="white">
-                Goodies
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <AccordionButton
-              display="flex"
-              alignItems="center"
-              justifyContent="space-between"
-              p={4}
-              _hover={{ bg: 'blue.900' }}>
-              <Text fontSize="md" color="white">
-                What is the judging criteria?
-              </Text>
-              <ChevronDownIcon fontSize="24px" color={'white'} />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="white">
-                Judges aren't decided yet.
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
+          </AccordionItem>))}
         </Accordion>
       </Container>
     </Flex>
