@@ -64,7 +64,7 @@ export default function Footer() {
         align={{ base: 'center', md: 'center' }}>
         <p style={footerText}>© 2023 ISTE-PCCoE Student Chapter. All rights reserved</p>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'ttps://twitter.com/iste_pccoe'}>
+          <SocialButton label={'Twitter'} href={'https://twitter.com/iste_pccoe'}>
             <FaTwitter />
           </SocialButton>
           <SocialButton label={'Linkedin'} href={'https://www.linkedin.com/company/iste-pccoe-student-chapter'} >
