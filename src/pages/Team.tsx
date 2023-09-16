@@ -33,7 +33,7 @@ function sortByCustomOrder<T extends SortableObject>(
         return indexA - indexB;
     });
 }
-
+const teams=["Core","Coding","Web","Technical","Event Management","Design" ,"Marketing","Support"];
 export default function Team() {
     const [membersData, setmembersData] = useState([]);
     const [coreTeam, setcoreTeam] = useState([]);
@@ -85,7 +85,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
     }
 
     useEffect(() => {
-        const inLocalStorage = localStorage.getItem("membersData");
+        const inLocalStorage = sessionStorage.getItem("membersData");
         if (!inLocalStorage) {
             fetch("https://us-central1-iste-pccoe.cloudfunctions.net/getTeamData")
                 .then((data) => data.json())
@@ -139,11 +139,12 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
 
                 })
                 .catch((err) => {
-                    console.log(err);
+                    // console.log(err);
+                    return err;
                 })
         }
         else {
-            const data = localStorage.getItem("membersData");
+            const data = sessionStorage.getItem("membersData");
             // console.log(JSON.parse(data));
             const newData = JSON.parse(data);
             if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0|| technicalTeam.length == 0) {
@@ -163,70 +164,47 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
 
     return (
         <div className="teamContainer">
-            {/* Team section */}
             <Navbar color="#fff" p="1.5rem 2rem" />
             <section>
-                {/* Heading */}
                 <HeadDesign teamName="Core" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {coreTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Coding" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {codingTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Web" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {webTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Technical" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {technicalTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Event Management" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {eventTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Design" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {DesignTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
                 <HeadDesign teamName="Marketing" />
-                {/* Displaying team members using the Card component */}
                 <div className="row">
-                    {/* Mapping over membersData to render each member using Card */}
                     {marketingTeam.map((member) => (
-                        // Rendering the Card component for each member
                         <Card member={member} />
                     ))}
                 </div>
