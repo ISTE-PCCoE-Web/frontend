@@ -203,7 +203,7 @@ const Home = () => {
                 bgBlendMode="transparent"
                 onClick={() => navigate("/events")}
               >
-                View Past Events&nbsp;
+                View Events&nbsp;
                 <BsArrowRightCircle color="#fff" />
               </Button>
             </Flex>
@@ -426,9 +426,9 @@ const Home = () => {
                   <a href="https://www.instagram.com/iste_pccoe/"><BsInstagram size="2rem" /></a>
                 </Box>
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#FF0000"}}>
-                  <a href="https://www.youtube.com" target="_blank"><BsYoutube size="2rem" /></a>
+                  <a href="https://www.youtube.com/@istepccoe" target="_blank"><BsYoutube size="2rem" /></a>
                 </Box>
-                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#0077b5"}}  onClick={() => navigate("https://www.linkedin.com/company/iste-pccoe-student-chapter")}>
+                <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#0077b5"}}>
                   <a href="https://www.linkedin.com/company/iste-pccoe-student-chapter" target="_blank"><BsLinkedin size="2rem" /></a>
                 </Box>
                 <Box color="#fff" padding= "0.5rem" borderRadius= "full" cursor="pointer" _hover={{bg:"#fff", color:"#000"}}>
@@ -438,6 +438,7 @@ const Home = () => {
               <Text fontSize="23px" color="#fff" textAlign="left" mt="2rem">
                 thinking of organizing a session? We can help you
               </Text>
+              <a href='/givetalk'>
               <Button
                 bg="linear-gradient(90deg, rgba(43,241,251,1) 25%, rgba(43,241,251,1) 91%)"
                 mt="1.5rem"
@@ -447,6 +448,7 @@ const Home = () => {
               >
                 Organize Session
               </Button>
+              </a>
             </Box>
           </Box>
         </>

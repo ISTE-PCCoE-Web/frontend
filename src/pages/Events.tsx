@@ -9,11 +9,11 @@ import {
   Badge,
   Image
 } from '@chakra-ui/react';
-export default function Events(){
+export default function Events({DescArray}){
   return (
     <div className="eventContainer">
       <Navbar color="#fff" p="1rem 2rem"/>
-      <UpcomingEvents/>
+      <UpcomingEvents DescArray = {DescArray}/>
       {/* <div className="horizon"/>
       <PastEvents/> */}
       <Footer/>

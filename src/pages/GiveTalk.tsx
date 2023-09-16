@@ -20,7 +20,7 @@ const GiveTalk = () => {
   return (
     <Box minHeight={"100vh"} pb="1.5rem">
       <Navbar color="#fff" p="1.5rem 2rem" />
-      <Flex justifyContent="center" alignItems="center" mx="auto" flexDir="column" width="70%" padding="1.5rem" bg="#ffffff50" backdropFilter="blur(5px)" borderRadius={'3rem'}>
+      <Flex justifyContent="center" alignItems="center" mx="auto" flexDir="column" width="70%" padding="1.5rem" backdropFilter="blur(5px)" borderRadius={'3rem'}>
         <Heading as="h1" style={{ color: "white" }}>
           Speaker <span> suggestion </span>
         </Heading>
@@ -36,7 +36,7 @@ const GiveTalk = () => {
                 placeholder="Enter your name"
               />
             </Box>
-
+            <br/>
             <Box>
               <label className="label" htmlFor="email">Enter your email</label>
               <Field
@@ -47,6 +47,7 @@ const GiveTalk = () => {
                 placeholder="Enter your email"
               />
             </Box>
+            <br/>
 
             <Box>
               <label className="label" htmlFor="phone">Enter your phone</label>
@@ -58,6 +59,7 @@ const GiveTalk = () => {
                 placeholder="Enter your phone"
               />
             </Box>
+            <br/>
 
             <Box>
               <label className="label" htmlFor="sname">Enter speaker name</label>
@@ -69,6 +71,7 @@ const GiveTalk = () => {
                 placeholder="Enter speaker name"
               />
             </Box>
+            <br/>
 
             <Box>
               <label className="label" htmlFor="sdetail">Enter speaker detail</label>
@@ -80,6 +83,7 @@ const GiveTalk = () => {
                 placeholder="Enter speaker detail"
               />
             </Box>
+            <br/>
 
             <Button type="submit" className="button">
               Submit

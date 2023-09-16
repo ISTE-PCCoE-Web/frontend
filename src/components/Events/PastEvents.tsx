@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from 'react'
 import EventCard from './EventCard';
 import './pastEvents.css'
@@ -12,7 +13,8 @@ import {
     IconProps,
 } from '@chakra-ui/react'
 
-export default function PastEvents() {
+
+export default function PastEvents({DescArray}) {
     return (
         <div className='PastContainer'>
             <Stack
@@ -35,9 +37,9 @@ export default function PastEvents() {
                     </Text>
                 </Heading>
             </Stack>
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            {/* {DescArray!=undefined && DescArray.map((Desc)=>(
+                // <EventCard cardData = {Desc}/>
+            ))} */}
         </div>
     )
 }

@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/events",
-    element: <Events />,
+    element: <Events Desc = {UpEventsDesc}/>,
   },
   {
     path: "/givetalk",

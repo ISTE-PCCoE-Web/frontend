@@ -1,9 +1,8 @@
+//@ts-nocheck
 import React from 'react'
 import EventCard from './EventCard';
 import './upcomingEvents.css'
-
-
-
+import {UpEventsDesc} from '../../data/UpEventsDesc'
 
 import {
     Flex,
@@ -16,7 +15,14 @@ import {
     IconProps,
 } from '@chakra-ui/react'
 
-export default function UpcomingEvents() {
+export default function UpcomingEvents({DescArray}) {
+    // console.log(UpEventsDesc);
+    const keys = Object.keys(UpEventsDesc[0]);
+    console.log(keys);
+    UpEventsDesc.map((desc)=>{
+        console.log(desc);
+    })
+
     return (
 
         <div className='UpcomingContainer'>
@@ -40,9 +46,9 @@ export default function UpcomingEvents() {
                     </Text>
                 </Heading>
             </Stack>
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            {UpEventsDesc.map((Desc)=>(
+                <EventCard CardData = {Desc}/>
+            ))}
 
         </div>
     )

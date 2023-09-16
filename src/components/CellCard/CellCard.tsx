@@ -33,7 +33,7 @@ const CellCard = ({cellIcon, cellName, cellInfo, bgColor,...props} : any) => {
       ) : (
         <Box h="100%" as={motion.div} animate={{rotateY : selected ? 180 : 0,}} padding="1rem" borderRadius="1.5rem" display="flex" gap="1.5rem" justifyContent="center" alignItems="center" bg={bgColor} flexDir="column">
           <Text textAlign="center" fontWeight="semibold">{cellInfo}</Text>
-          <Button>View Activities</Button>
+          {/* <Button>View Activities</Button> */}
         </Box>
       )}
       
