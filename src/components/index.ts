@@ -15,3 +15,4 @@ export { default as CellCard } from './CellCard/CellCard';
 export { default as ScrollDownIndicator } from './ScrollDownIndicator/ScrollDownIndicator';
 export { default as Sponsors } from './Sponsors/Sponsors';
 export { default as Footer } from './Footer/Footer';
+export { default as Loader } from './Loader/Loader';
