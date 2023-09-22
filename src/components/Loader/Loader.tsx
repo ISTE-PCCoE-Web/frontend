@@ -3,7 +3,9 @@ import { useState, CSSProperties } from "react";
 
 import { Grid } from 'react-loader-spinner'
 const override: CSSProperties = {
-    display: "block",
+    display: "flex",
+    alignItems:"center",
+    justifyContent:"center",
     margin: "0 auto",
     borderColor: "red",
   };
@@ -40,6 +42,7 @@ export default function Loader() {
 <Grid
   height="80"
   width="80"
+
   color="#4fa94d"
   ariaLabel="grid-loading"
   radius="12.5"
