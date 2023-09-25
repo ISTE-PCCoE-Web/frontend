@@ -36,6 +36,8 @@ function sortByCustomOrder<T extends SortableObject>(
 }
 
 export default function Team() {
+    const [loading, setloading] = useState(true);
+
     const [membersData, setmembersData] = useState([]);
     const [coreTeam, setcoreTeam] = useState([]);
     const [codingTeam, setcodingTeam] = useState([]);
@@ -48,7 +50,7 @@ export default function Team() {
 
 const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
     ans=JSON.parse(ans);
-    setLoading(false);
+    setloading(true);
     for (const v of ans) {
         if (v.team === undefined) {
           continue;
@@ -151,9 +153,11 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
                 })
         }
         else {
+            setloading(true);
             const data = localStorage.getItem("membersData");
             // console.log(JSON.parse(data));
             const newData = JSON.parse(data);
+            setloading(false);
             if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0|| technicalTeam.length == 0) {
                 populateData(data, coreTeam, codingTeam, webTeam, eventTeam, DesignTeam, supportingTeam, marketingTeam,technicalTeam);
                 setcoreTeam(sortByCustomOrder(coreTeam, 'position', coreTeamSortOrder));
@@ -170,7 +174,8 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
     });
 
     return (
-        <div className="teamContainer">
+        loading?(<Loader/>):
+        (<div className="teamContainer">
             {/* Team section */}
             <Navbar color="#fff" p="1.5rem 2rem" />
             <section>
@@ -249,6 +254,6 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
                 </div>
             </section>
                 <Footer/>
-        </div>
+        </div>)
     )
 }
