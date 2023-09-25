@@ -12,6 +12,7 @@ import {
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { json } from 'stream/consumers';
+import { LoaderFunction } from 'react-router-dom';
 
 const coreTeamSortOrder = ["President", "Vice President", "Secretary", "Joint Secretary", "Treasurer", "Co-treasurer",
     "Management Head", "Head Coordinator", "Member"];
@@ -35,7 +36,6 @@ function sortByCustomOrder<T extends SortableObject>(
 }
 
 export default function Team() {
-    const [Loading, setLoading] = useState(true);
     const [membersData, setmembersData] = useState([]);
     const [coreTeam, setcoreTeam] = useState([]);
     const [codingTeam, setcodingTeam] = useState([]);
@@ -47,7 +47,6 @@ export default function Team() {
     const [technicalTeam,setTechnicalTeam]=useState([]);
 
 const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
-    setLoading(true);
     ans=JSON.parse(ans);
     setLoading(false);
     for (const v of ans) {
@@ -84,10 +83,13 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
           }
         }
       }
+      setloading(false);
 
     }
 
     useEffect(() => {
+        setloading(true);
+
         const inLocalStorage = localStorage.getItem("membersData");
         if (!inLocalStorage) {
             setLoading(true);
@@ -132,6 +134,7 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
                         }
 
                     }
+                    setloading(false);
                     setcoreTeam(sortByCustomOrder(v1, 'position', coreTeamSortOrder));
                     setcodingTeam(sortByCustomOrder(v2, 'position', TeamSortOrder));
                     setwebTeam(sortByCustomOrder(v3, 'position', TeamSortOrder));
@@ -148,11 +151,9 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
                 })
         }
         else {
-            setLoading(true);
             const data = localStorage.getItem("membersData");
             // console.log(JSON.parse(data));
             const newData = JSON.parse(data);
-            setLoading(false);
             if (codingTeam.length == 0 || eventTeam.length == 0 || supportingTeam.length == 0 || DesignTeam.length == 0 || coreTeam.length == 0 || marketingTeam.length == 0|| technicalTeam.length == 0) {
                 populateData(data, coreTeam, codingTeam, webTeam, eventTeam, DesignTeam, supportingTeam, marketingTeam,technicalTeam);
                 setcoreTeam(sortByCustomOrder(coreTeam, 'position', coreTeamSortOrder));
@@ -169,7 +170,6 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
     });
 
     return (
-    Loading?(<Loader/>):(
         <div className="teamContainer">
             {/* Team section */}
             <Navbar color="#fff" p="1.5rem 2rem" />
@@ -250,5 +250,5 @@ const populateData=async(ans, v1, v2, v3, v4, v5, v6, v7,v8)=>{
             </section>
                 <Footer/>
         </div>
-    ))
+    )
 }
