@@ -6,6 +6,7 @@ A website for ISTE PCCOE Student's Chapter
 2. [Project Setup](#projectsetup)
 3. [Contribution Guidelines](#contribution)
 4. [Learning](#learning)
+5. [Contributing to the Repository](#ContributingtotheRepository)
 
 
 <a name = "overview"></a>
@@ -59,7 +60,7 @@ Not into reading? Check out the following videos
 3. Learn Spline -https://docs.spline.design/05c7a5aabab041d2876cd3222d92ca32
 
 
-
+<a name = "ContributingtotheRepository"></a>
 ## Contributing to the Repository
 
 Thank you for considering contributing to our repository! Here's how you can get started:

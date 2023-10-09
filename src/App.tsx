@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import { Home, Events, EventDesc, Feedback, Team, About, GiveTalk } from './pages';
 import {useEffect} from 'react';
-
 const router = createBrowserRouter([
   {
     path: "/",
