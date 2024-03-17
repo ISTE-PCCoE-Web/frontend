@@ -9,7 +9,12 @@ import {
   Badge,
   Image
 } from '@chakra-ui/react';
-export default function Events({DescArray}){
+
+type EventsProps = {
+  DescArray?: any[];
+}
+
+export default function Events({DescArray} : EventsProps){
   return (
     <div className="eventContainer">
       <Navbar color="#fff" p="1rem 2rem"/>

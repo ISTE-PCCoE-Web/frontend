@@ -4,7 +4,11 @@ import { Hero, Features, Frequent, Counter, Footer, Navbar } from '../components
 import '../components/EventDesc/eventDesc.css';
 import debate from '../img/Events/Tark-Vitark Poster 2.png';
 
-export default function EventDesc({Desc}) {
+type EventDescProps = {
+  Desc?: any;
+}
+
+export default function EventDesc({Desc} : EventDescProps) {
 
   // console.log(Desc);
   return (
